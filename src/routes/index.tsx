@@ -46,8 +46,8 @@ function Hero() {
     <section className="bg-[var(--brand-green-dark)] text-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.07] bg-[radial-gradient(circle_at_30%_20%,#fff,transparent_60%)]" />
       <div className="relative max-w-6xl mx-auto px-5 pt-14 pb-16 md:pt-20 md:pb-24 text-center">
-        <span className="pill bg-white/10 border border-white/15 text-white/90 tracking-[0.25em] text-xs">
-          COCINA ACTIVA
+        <span className="pill bg-white/10 border border-white/15 tracking-[0.18em] text-xs" style={{ color: "#E11D8A" }}>
+          Las Recetas de Matilda
         </span>
         <h1 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1]">
           ¿Y si el cansancio, la <span className="text-[var(--brand-orange-light)]">caída del pelo</span> y los{" "}
@@ -392,10 +392,10 @@ function Guarantee() {
           🛡️
         </div>
         <h2 className="mt-6 font-display text-3xl md:text-4xl font-bold text-[var(--brand-green-dark)]">
-          Garantía Total de 60 Días
+          Garantía Total de 30 Días
         </h2>
         <p className="mt-4 text-[var(--brand-text)]/80 leading-relaxed">
-          Tienes 60 días enteros para revisar el material, aplicar lo que aprendiste y ver los resultados.
+          Tienes 30 días enteros para revisar el material, aplicar lo que aprendiste y ver los resultados.
           Si no quedas del todo conforme, pides el reembolso y te devolvemos todo. Es riesgo CERO para ti
           y compromiso total de nuestra parte.
         </p>
