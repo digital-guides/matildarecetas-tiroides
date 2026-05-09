@@ -392,10 +392,10 @@ function Guarantee() {
           🛡️
         </div>
         <h2 className="mt-6 font-display text-3xl md:text-4xl font-bold text-[var(--brand-green-dark)]">
-          Garantía Total de 60 Días
+          Garantía Total de 30 Días
         </h2>
         <p className="mt-4 text-[var(--brand-text)]/80 leading-relaxed">
-          Tienes 60 días enteros para revisar el material, aplicar lo que aprendiste y ver los resultados.
+          Tienes 30 días enteros para revisar el material, aplicar lo que aprendiste y ver los resultados.
           Si no quedas del todo conforme, pides el reembolso y te devolvemos todo. Es riesgo CERO para ti
           y compromiso total de nuestra parte.
         </p>
