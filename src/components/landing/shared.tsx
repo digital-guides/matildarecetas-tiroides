@@ -2,8 +2,18 @@ import { useEffect, useState } from "react";
 import { CHECKOUT_URL, PRICE_OFFER, PRICE_REGULAR, RATING_TEXT } from "@/lib/landing-config";
 
 export function CTAButton({ children = "🍽️ QUIERO MIS RECETAS YA", className = "" }: { children?: React.ReactNode; className?: string }) {
+  const handleClick = () => {
+    if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
+      (window as any).fbq("track", "InitiateCheckout", {
+        content_name: "Cocina Deliciosa para Tiroides",
+        content_category: "Recetario digital",
+        value: 9.99,
+        currency: "USD",
+      });
+    }
+  };
   return (
-    <a href={CHECKOUT_URL} className={`btn-cta ${className}`}>
+    <a href={CHECKOUT_URL} onClick={handleClick} className={`btn-cta ${className}`}>
       {children}
     </a>
   );
