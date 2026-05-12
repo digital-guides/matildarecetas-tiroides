@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroCollage from "@/assets/hero-nueva.webp";
-import ebookMockup from "@/assets/ebook-mockup.jpg";
-import dishesCollage from "@/assets/presentacion-contenido.webp";
+import dishesCollage from "@/assets/que-vas-encontrar.webp";
+import matildaCocina from "@/assets/matilda-cocina.webp";
 import {
   CTAButton,
   Countdown,
@@ -258,10 +258,10 @@ function MidCTA() {
       <div className="max-w-4xl mx-auto text-center">
         <div className="rounded-3xl overflow-hidden shadow-xl ring-1 ring-white/10 mb-10">
           <img
-            src={heroCollage}
-            alt="Recetas saludables para tiroides"
-            width={1600}
-            height={896}
+            src={matildaCocina}
+            alt="Matilda en su cocina con recetas saludables para tiroides"
+            width={873}
+            height={1064}
             loading="lazy"
             decoding="async"
             className="w-full h-auto block"
@@ -335,7 +335,7 @@ function SpecialOffer() {
           </div>
 
           <div className="mt-8 flex flex-col items-center gap-3">
-            <CTAButton>🍽️ SÍ, QUIERO MIS RECETAS</CTAButton>
+            <CTAButton />
             <RatingLine light />
           </div>
         </div>
@@ -444,7 +444,7 @@ function FinalCTA() {
           <p className="font-display text-5xl md:text-6xl font-bold mt-1">Hoy: {PRICE_OFFER}</p>
         </div>
         <div className="mt-10 flex flex-col items-center gap-4">
-          <CTAButton>🍽️ SÍ, QUIERO MIS RECETAS YA</CTAButton>
+          <CTAButton />
           <RatingLine light />
           <GuaranteePill light />
         </div>
@@ -482,7 +482,6 @@ function Landing() {
       <Hero />
       <PainSection />
       <ProductIntro />
-      <BenefitCards />
       <Outcomes />
       <WhatsInside />
       <MidCTA />
