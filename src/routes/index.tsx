@@ -222,23 +222,16 @@ function WhatsInside() {
           ¿Qué vas a encontrar adentro?
         </h2>
 
-        <div className="mt-10 rounded-3xl overflow-hidden shadow-[var(--shadow-card)] relative">
+        <div className="mt-10 rounded-3xl overflow-hidden shadow-[var(--shadow-card)] bg-white">
           <img
             src={dishesCollage}
-            alt="60 Recetas Deliciosas Para Tiroides"
-            width={1600}
-            height={800}
+            alt="Todo lo que incluye tu recetario: 60 recetas, plan semanal, lista de compras y más"
+            width={1456}
+            height={1100}
             loading="lazy"
             decoding="async"
             className="w-full h-auto block"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[var(--brand-green-dark)]/85 via-[var(--brand-green-dark)]/30 to-transparent flex items-end">
-            <div className="p-6 md:p-10 text-white">
-              <p className="font-display text-2xl md:text-4xl font-bold leading-tight">
-                60 Recetas Deliciosas <br /> Para Tiroides
-              </p>
-            </div>
-          </div>
         </div>
 
         <div className="mt-10 space-y-3">
