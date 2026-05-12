@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import heroCollage from "@/assets/hero-nueva.webp";
 import dishesCollage from "@/assets/que-vas-encontrar.webp";
 import matildaCocina from "@/assets/matilda-cocina.webp";
+import garantiaHotmart from "@/assets/garantia-hotmart.png";
 import {
   CTAButton,
   Countdown,
@@ -376,14 +377,17 @@ function Guarantee() {
   return (
     <section className="bg-white pb-16 md:pb-24 px-5">
       <div className="max-w-3xl mx-auto bg-[var(--brand-green-light)] border-2 border-[var(--brand-green-accent)]/30 rounded-3xl p-8 md:p-12 text-center">
-        <div className="w-20 h-20 mx-auto rounded-2xl bg-white flex items-center justify-center text-4xl shadow-sm">
-          🛡️
-        </div>
+        <img
+          src={garantiaHotmart}
+          alt="Garantía de 7 días con Hotmart"
+          loading="lazy"
+          className="mx-auto h-28 md:h-36 w-auto object-contain"
+        />
         <h2 className="mt-6 font-display text-3xl md:text-4xl font-bold text-[var(--brand-green-dark)]">
-          Garantía Total de 30 Días
+          Garantía Total de 7 Días
         </h2>
         <p className="mt-4 text-[var(--brand-text)]/80 leading-relaxed">
-          Tienes 30 días enteros para revisar el material, aplicar lo que aprendiste y ver los resultados.
+          Tienes 7 días enteros para revisar el material, aplicar lo que aprendiste y ver los resultados.
           Si no quedas del todo conforme, pides el reembolso y te devolvemos todo. Es riesgo CERO para ti
           y compromiso total de nuestra parte.
         </p>
