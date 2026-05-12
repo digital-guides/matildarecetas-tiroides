@@ -34,7 +34,7 @@ export function RatingLine({ light = false }: { light?: boolean }) {
 export function GuaranteePill({ light = false }: { light?: boolean }) {
   return (
     <span className={`pill ${light ? "bg-white/10 text-white border border-white/20" : "bg-[var(--brand-green-light)] text-[var(--brand-green-accent)]"}`}>
-      🛡️ Garantía de 30 días
+      🛡️ Garantía de 7 días
     </span>
   );
 }
