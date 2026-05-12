@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CHECKOUT_URL, PRICE_OFFER, PRICE_REGULAR, RATING_TEXT } from "@/lib/landing-config";
 
-export function CTAButton({ children = "🍽️ QUIERO MIS RECETAS YA", className = "" }: { children?: React.ReactNode; className?: string }) {
+export function CTAButton({ children = "🦋 QUIERO CUIDAR MI TIROIDES", className = "" }: { children?: React.ReactNode; className?: string }) {
   const handleClick = () => {
     if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
       (window as any).fbq("track", "InitiateCheckout", {
