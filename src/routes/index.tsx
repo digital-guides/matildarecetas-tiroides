@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroCollage from "@/assets/hero-collage.jpg";
+import heroCollage from "@/assets/hero-nueva.webp";
 import ebookMockup from "@/assets/ebook-mockup.jpg";
-import dishesCollage from "@/assets/dishes-collage.jpg";
+import dishesCollage from "@/assets/presentacion-contenido.webp";
 import {
   CTAButton,
   Countdown,
@@ -54,23 +54,30 @@ function Hero() {
           <span className="text-[var(--brand-gold)]">kilos de más</span> tuvieran una sola causa que nadie está tratando?
         </h1>
         <p className="mt-6 text-base md:text-lg text-white/85 max-w-3xl mx-auto leading-relaxed">
-          Desayunos, almuerzos, cenas y postres pensados especialmente para hipotiroidismo, hipertiroidismo y Hashimoto.
-          Recetas fáciles, ricas y seguras para tu tiroides — sin complicarte.
+          Aprende a organizar tus comidas con recetas fáciles, plan semanal, lista de compras y reemplazos inteligentes para cuidar tu tiroides desde la cocina diaria.
         </p>
 
         <div className="mt-10 rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10 max-w-4xl mx-auto">
           <img
             src={heroCollage}
-            alt="Collage de platos saludables para tiroides"
-            width={1600}
-            height={896}
+            alt="Recetario Cocina Para Tu Tiroides con plan semanal y lista de compras"
+            width={1456}
+            height={1092}
             decoding="async"
             className="w-full h-auto block"
           />
         </div>
 
-        <div className="mt-10 flex flex-col items-center gap-4">
+        <div className="mt-10 flex flex-col items-center gap-3">
           <CTAButton />
+          <p className="text-sm md:text-base text-white/90">
+            <span className="line-through text-white/60">USD $29.99</span>
+            <span className="mx-2">·</span>
+            Hoy: <span className="font-bold text-[var(--brand-orange-light)]">USD $9.99</span>
+          </p>
+          <p className="text-xs md:text-sm text-white/70 max-w-md">
+            Aprox.: $212 MXN · $40.000 COP · S/37. Conversión final según tu banco.
+          </p>
           <RatingLine light />
           <GuaranteePill light />
         </div>
@@ -128,24 +135,12 @@ function ProductIntro() {
           TU NUEVO RECETARIO
         </span>
         <h2 className="mt-5 font-display text-3xl md:text-5xl font-bold text-[var(--brand-green-dark)] leading-tight">
-          Te presentamos: <br className="hidden md:block" />
-          <span className="text-[var(--brand-green-accent)]">Cocina Deliciosa para Tiroides</span>
+          Más que un recetario: <br className="hidden md:block" />
+          <span className="text-[var(--brand-green-accent)]">una guía práctica para tu tiroides</span>
         </h2>
         <p className="mt-6 text-lg text-[var(--brand-text)]/80 max-w-3xl mx-auto leading-relaxed">
-          El recetario con 60 recetas completas diseñadas especialmente para personas con hipotiroidismo e hipertiroidismo.
-          Cada receta está pensada para nutrir tu tiroides, levantarte la energía y — sobre todo — ser bien rica.
+          Una guía práctica para saber qué comer, cómo organizar tu semana y cómo adaptar tus comidas con recetas fáciles, plan semanal, lista de compras, alimentos aliados y reemplazos inteligentes.
         </p>
-        <div className="mt-12 rounded-3xl overflow-hidden shadow-[var(--shadow-card)] bg-white">
-          <img
-            src={ebookMockup}
-            alt="Mockup del recetario digital Cocina Deliciosa para Tiroides"
-            width={1280}
-            height={1024}
-            loading="lazy"
-            decoding="async"
-            className="w-full h-auto block"
-          />
-        </div>
       </div>
     </section>
   );
