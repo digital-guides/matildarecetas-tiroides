@@ -1,6 +1,5 @@
 // EDITABLE: precios y enlace de checkout
-// TODO: reemplazar CHECKOUT_URL por el enlace real de Hotmart cuando esté disponible.
-export const PRICE_REGULAR = "$29.99";
-export const PRICE_OFFER = "$9.99";
-export const CHECKOUT_URL = "https://pay.hotmart.com/N105760948V?checkoutMode=10&bid=1778354868304";
+export const PRICE_REGULAR = "$397 MXN";
+export const PRICE_OFFER = "$197 MXN";
+export const CHECKOUT_URL = "https://pay.hotmart.com/N105760948V?off=ax6bw88v&checkoutMode=10";
 export const RATING_TEXT = "★★★★★ 4.9/5 — opiniones verificadas";

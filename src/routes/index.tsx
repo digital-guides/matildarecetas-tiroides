@@ -72,12 +72,9 @@ function Hero() {
         <div className="mt-10 flex flex-col items-center gap-3">
           <CTAButton />
           <p className="text-sm md:text-base text-white/90">
-            <span className="line-through text-white/60">USD $29.99</span>
+            <span className="line-through text-white/60">$397 MXN</span>
             <span className="mx-2">·</span>
-            Hoy: <span className="font-bold text-[var(--brand-orange-light)]">USD $9.99</span>
-          </p>
-          <p className="text-xs md:text-sm text-white/70 max-w-md">
-            Aprox.: $212 MXN · $40.000 COP · S/37. Conversión final según tu banco.
+            Hoy: <span className="font-bold text-[var(--brand-orange-light)]">$197 MXN</span>
           </p>
           <RatingLine light />
           <GuaranteePill light />
