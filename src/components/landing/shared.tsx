@@ -1,7 +1,28 @@
 import { useEffect, useState } from "react";
 import { CHECKOUT_URL, PRICE_OFFER, PRICE_REGULAR, RATING_TEXT } from "@/lib/landing-config";
 
+const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"];
+
+function buildCheckoutUrl(): string {
+  if (typeof window === "undefined") return CHECKOUT_URL;
+  try {
+    const current = new URLSearchParams(window.location.search);
+    const target = new URL(CHECKOUT_URL);
+    UTM_KEYS.forEach((k) => {
+      const v = current.get(k);
+      if (v) target.searchParams.set(k, v);
+    });
+    return target.toString();
+  } catch {
+    return CHECKOUT_URL;
+  }
+}
+
 export function CTAButton({ children = "🦋 QUIERO CUIDAR MI TIROIDES", className = "" }: { children?: React.ReactNode; className?: string }) {
+  const [href, setHref] = useState(CHECKOUT_URL);
+  useEffect(() => {
+    setHref(buildCheckoutUrl());
+  }, []);
   const handleClick = () => {
     if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
       (window as any).fbq("track", "InitiateCheckout", {
@@ -13,7 +34,7 @@ export function CTAButton({ children = "🦋 QUIERO CUIDAR MI TIROIDES", classNa
     }
   };
   return (
-    <a href={CHECKOUT_URL} onClick={handleClick} className={`btn-cta ${className}`}>
+    <a href={href} onClick={handleClick} className={`btn-cta ${className}`}>
       {children}
     </a>
   );
