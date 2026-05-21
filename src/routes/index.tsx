@@ -312,14 +312,17 @@ function MidCTA() {
 const testimonials = [
   {
     name: "María Elena Gutiérrez",
+    location: "Ciudad de México, México",
     text: "Hace 3 semanas que cocino con este recetario y la diferencia es impresionante. Mis desayunos con avena y semillas de calabaza se transformaron en mi ritual de cada mañana. Por fin algo que funciona y encima es rico.",
   },
   {
     name: "Claudia Fernández Rivas",
+    location: "Bogotá, Colombia",
     text: "Tengo hipertiroidismo y encontrar postres que pudiera comer sin sentirme mal era misión imposible. Probé la torta de banana con harina de almendras del recetario y no lo podía creer: riquísima y sin un solo ingrediente que me haga mal.",
   },
   {
     name: "Patricia Morales Vega",
+    location: "Lima, Perú",
     text: "Lo que más me gustó es que las recetas usan ingredientes que consigo en cualquier supermercado. No tuve que comprar nada raro ni gastar de más. La sopa de lentejas con cúrcuma es mi favorita. 100% recomendado.",
   },
 ];
@@ -337,6 +340,7 @@ function Testimonials() {
               <Stars />
               <p className="mt-4 text-[var(--brand-text)]/85 leading-relaxed flex-1">“{t.text}”</p>
               <p className="mt-5 font-semibold text-[var(--brand-green-dark)]">— {t.name}</p>
+              <p className="text-sm text-[var(--brand-text)]/60">{t.location}</p>
             </div>
           ))}
         </div>
