@@ -28,8 +28,8 @@ export function CTAButton({ children = "🦋 QUIERO CUIDAR MI TIROIDES", classNa
       (window as any).fbq("track", "InitiateCheckout", {
         content_name: "Cocina Deliciosa para Tiroides",
         content_category: "Recetario digital",
-        value: 197,
-        currency: "MXN",
+        value: 17,
+        currency: "USD",
       });
     }
   };
