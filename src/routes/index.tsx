@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import heroCollage from "@/assets/hero-nueva.webp";
 import dishesCollage from "@/assets/que-vas-encontrar.webp";
 import matildaCocina from "@/assets/matilda-cocina.webp";
+import matildaPerfil from "@/assets/matilda-perfil.png";
 import garantiaHotmart from "@/assets/garantia-hotmart.png";
 import {
   CTAButton,
@@ -91,6 +92,39 @@ const painPoints = [
   "😔 Sientes que comer ‘para la tiroides’ es aburrido, sin gusto y siempre lo mismo. Terminas comiendo lo de siempre porque no sabes qué más preparar.",
   "🥱 La hinchazón, la caída del pelo, la piel seca, el estreñimiento y el cansancio que no se va… hace meses o años que estás así y nadie te da una solución concreta.",
 ];
+
+function MatildaStory() {
+  return (
+    <section className="bg-[#FAF7F2] py-16 md:py-24 px-5">
+      <div className="max-w-[680px] mx-auto">
+        <div className="flex items-center gap-4">
+          <img
+            src={matildaPerfil}
+            alt="Matilda García"
+            width={72}
+            height={72}
+            loading="lazy"
+            decoding="async"
+            className="w-16 h-16 md:w-18 md:h-18 rounded-full object-cover shadow-md ring-2 ring-white"
+          />
+          <span className="font-bold text-lg md:text-xl text-[var(--brand-green-dark)]">
+            Matilda García
+          </span>
+        </div>
+        <div className="mt-6 space-y-5 text-base md:text-[17px] leading-relaxed text-[#374151]">
+          <p>Me llamo Matilda. Tengo 36 años y durante casi tres años no entendía qué me pasaba.</p>
+          <p>Me levantaba cansada aunque hubiera dormido ocho horas. Hacía dieta, contaba calorías, iba al gimnasio — y la balanza no se movía. Mi médico me decía que mis análisis estaban dentro de lo normal. Que era estrés. Que tenía que dormir mejor.</p>
+          <p>Pero yo sabía que algo no estaba bien.</p>
+          <p>Hasta que una nutricionista miró mis análisis con otros ojos y me dijo algo que cambió todo: <em>“Tu tiroides está funcionando, pero tu alimentación la está frenando todos los días.”</em></p>
+          <p>Nadie me había dicho eso antes. Ni uno solo de los médicos que había consultado.</p>
+          <p>Empecé a cambiar lo que ponía en mi plato. Sin dietas imposibles. Sin dejar de comer rico. Solo aprendiendo qué alimentos ayudan a mi tiroides y cuáles la sabotean sin que yo lo supiera.</p>
+          <p>En ocho semanas bajé 6 kilos. El cansancio que me acompañó tres años desapareció casi sin darme cuenta.</p>
+          <p>Por eso creé este recetario. Porque lo que me faltaba no era otra pastilla ni otro médico — era saber cómo cocinar para mi condición.</p>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function PainSection() {
   return (
@@ -481,6 +515,7 @@ function Landing() {
     <div className="min-h-screen bg-white">
       {fontsLink}
       <Hero />
+      <MatildaStory />
       <PainSection />
       <ProductIntro />
       <Outcomes />
