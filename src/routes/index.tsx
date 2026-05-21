@@ -72,9 +72,9 @@ function Hero() {
         <div className="mt-10 flex flex-col items-center gap-3">
           <CTAButton />
           <p className="text-sm md:text-base text-white/90">
-            <span className="line-through text-white/60">$397 MXN</span>
+            <span className="line-through text-white/60">$27</span>
             <span className="mx-2">·</span>
-            Hoy: <span className="font-bold text-[var(--brand-orange-light)]">$197 MXN</span>
+            Hoy: <span className="font-bold text-[var(--brand-orange-light)]">$17</span>
           </p>
           <RatingLine light />
           <GuaranteePill light />
