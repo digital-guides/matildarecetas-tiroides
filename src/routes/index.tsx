@@ -9,7 +9,6 @@ import testimonioPatricia from "@/assets/testimonio-patricia.jpeg";
 import garantiaHotmart from "@/assets/garantia-hotmart.png";
 import {
   CTAButton,
-  Countdown,
   GuaranteePill,
   RatingLine,
   Stars,
