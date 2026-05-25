@@ -73,6 +73,9 @@ function Hero() {
 
         <div className="mt-10 flex flex-col items-center gap-3">
           <CTAButton />
+          <p className="text-sm text-white/75">
+            Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
+          </p>
           <p className="text-sm md:text-base text-white/90">
             <span className="line-through text-white/60">$27</span>
             <span className="mx-2">·</span>
@@ -488,6 +491,9 @@ function FinalCTA() {
         </div>
         <div className="mt-10 flex flex-col items-center gap-4">
           <CTAButton />
+          <p className="text-sm text-white/75">
+            Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
+          </p>
           <RatingLine light />
           <GuaranteePill light />
         </div>
