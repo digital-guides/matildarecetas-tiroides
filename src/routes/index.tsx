@@ -55,11 +55,10 @@ function Hero() {
           Las Recetas de Matilda
         </span>
         <h1 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1]">
-          ¿Y si el cansancio, la <span className="text-[var(--brand-orange-light)]">caída del pelo</span> y los{" "}
-          <span className="text-[var(--brand-gold)]">kilos de más</span> tuvieran una sola causa que nadie está tratando?
+          ¿Ya no sabes qué comer con la tiroides y cada día te sientes peor aunque sigas las indicaciones del médico?
         </h1>
         <p className="mt-6 text-base md:text-lg text-white/85 max-w-3xl mx-auto leading-relaxed">
-          Aprende a organizar tus comidas con recetas fáciles, plan semanal, lista de compras y reemplazos inteligentes para cuidar tu tiroides desde la cocina diaria.
+          Una guía práctica con 60 recetas organizadas, lista de compras y plan semanal — para que dejes de adivinar qué puedes comer y empieces a sentirte mejor desde tu cocina.
         </p>
 
         <div className="mt-10 rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10 max-w-4xl mx-auto">
@@ -89,11 +88,12 @@ function Hero() {
 }
 
 const painPoints = [
-  "😩 Te diagnosticaron hipotiroidismo, hipertiroidismo o Hashimoto y nadie te explicó bien qué puedes comer y qué no. Estás perdida.",
-  "⚖️ El peso sube sin freno, el metabolismo no responde y ninguna dieta te funciona — porque ninguna está pensada para tu condición tiroidea.",
-  "🤷‍♀️ Buscas recetas en internet pero te vuelves loca: ¿el brócoli hace mal? ¿puedo comer gluten? ¿la soya me afecta? Cada página te dice algo distinto.",
-  "😔 Sientes que comer ‘para la tiroides’ es aburrido, sin gusto y siempre lo mismo. Terminas comiendo lo de siempre porque no sabes qué más preparar.",
-  "🥱 La hinchazón, la caída del pelo, la piel seca, el estreñimiento y el cansancio que no se va… hace meses o años que estás así y nadie te da una solución concreta.",
+  "😩 Te diagnosticaron hipotiroidismo, hipertiroidismo o Hashimoto y nadie te explicó qué puedes comer y qué no. Cada vez que buscas en internet encuentras información diferente y terminas más confundida que antes.",
+  "🫠 Te despiertas hinchada aunque casi no hayas comido. Sientes la cara pesada, el cuerpo inflado — y no sabes qué alimento te lo está causando.",
+  "💇‍♀️ Se te cae mucho cabello y no sabes si es por la tiroides, por los medicamentos o por lo que estás comiendo. Nadie te da una respuesta clara.",
+  "⚖️ El peso no baja aunque comas poco. Tu metabolismo no responde y ninguna dieta te funciona — porque ninguna está pensada para tu condición tiroidea.",
+  "😔 Sientes que comer para la tiroides es aburrido y siempre lo mismo. Terminas comiendo lo de siempre porque no sabes qué más preparar — o haces dos comidas distintas porque tu familia no quiere comer 'comida de enfermo'.",
+  "🥱 La fatiga, la piel seca, el estreñimiento, la irritabilidad — llevas meses o años así y nadie te da un plan concreto de qué comer para sentirte mejor.",
 ];
 
 function MatildaStory() {
@@ -115,13 +115,12 @@ function MatildaStory() {
           </span>
         </div>
         <div className="mt-6 space-y-5 text-base md:text-[17px] leading-relaxed text-[#374151]">
-          <p>Me llamo Matilda. Tengo 36 años y durante casi tres años no entendía qué me pasaba.</p>
-          <p>Me levantaba cansada aunque hubiera dormido ocho horas. Hacía dieta, contaba calorías, iba al gimnasio — y la balanza no se movía. Mi médico me decía que mis análisis estaban dentro de lo normal. Que era estrés. Que tenía que dormir mejor.</p>
-          <p>Pero yo sabía que algo no estaba bien.</p>
-          <p>Hasta que una nutricionista miró mis análisis con otros ojos y me dijo algo que cambió todo: <em>“Tu tiroides está funcionando, pero tu alimentación la está frenando todos los días.”</em></p>
-          <p>Nadie me había dicho eso antes. Ni uno solo de los médicos que había consultado.</p>
-          <p>Empecé a cambiar lo que ponía en mi plato. Sin dietas imposibles. Sin dejar de comer rico. Solo aprendiendo qué alimentos ayudan a mi tiroides y cuáles la sabotean sin que yo lo supiera.</p>
-          <p>En ocho semanas bajé 6 kilos. El cansancio que me acompañó tres años desapareció casi sin darme cuenta.</p>
+          <p>Me llamo Matilda. Tengo 36 años y por casi tres años no entendía qué me pasaba.</p>
+          <p>Me despertaba hinchada aunque casi no hubiera comido. Se me caía el pelo a puños y mi cara se veía cansada todo el tiempo. Tomaba mis medicamentos, intentaba comer bien — y cada día me sentía peor. El médico me decía que mis análisis estaban bien. Que me cuidara. Que comiera sano.</p>
+          <p>¿Pero qué significa comer sano cuando tienes tiroides? Nadie me lo explicaba. Cada página de internet me decía algo distinto. El brócoli sí, el brócoli no. La soya te ayuda, la soya te hace mal. Me volví loca buscando respuestas que nunca llegaban.</p>
+          <p>Hasta que una nutricionista miró mis análisis diferente y me dijo algo que cambió todo: <em>“Tu tiroides está funcionando, pero lo que comes la está frenando todos los días.”</em></p>
+          <p>Nadie me había dicho eso antes. Empecé a cambiar lo que ponía en mi plato — sin dietas imposibles, sin dejar de comer rico. Solo aprendiendo qué alimentos ayudan a mi tiroides y cuáles la sabotean sin que yo lo supiera.</p>
+          <p>En ocho semanas bajé 6 kilos. La hinchazón bajó. El cansancio que me acompañó tres años desapareció casi sin darme cuenta.</p>
           <p>Por eso creé este recetario. Porque lo que me faltaba no era otra pastilla ni otro médico — era saber cómo cocinar para mi condición.</p>
         </div>
       </div>
@@ -149,13 +148,6 @@ function PainSection() {
               </div>
             );
           })}
-        </div>
-
-        <div className="mt-10 bg-[#FFF1F1] border-l-4 border-[#E27575] rounded-xl p-6 md:p-7 flex items-start gap-4">
-          <span className="text-3xl">💸</span>
-          <p className="text-[var(--brand-text)] font-medium leading-relaxed">
-            Gastaste en endocrinólogos, nutricionistas y suplementos, pero nadie te dio un plan de comidas concreto, rico y fácil de seguir para tu tiroides o tu Hashimoto.
-          </p>
         </div>
       </div>
     </section>
@@ -207,11 +199,11 @@ function BenefitCards() {
 }
 
 const outcomes = [
-  { icon: "🔥", title: "Reactiva tu metabolismo", text: "Recetas con alimentos que estimulan naturalmente la función tiroidea y aceleran tu metabolismo." },
-  { icon: "💧", title: "Baja la inflamación", text: "Ingredientes antiinflamatorios que reducen la hinchazón y te hacen sentir mejor en general." },
-  { icon: "⚡", title: "Recupera tu energía", text: "Deja de andar agotada. Cada comida está pensada para darte vitalidad desde el primer bocado." },
-  { icon: "🧠", title: "Despeja la mente", text: "Nutrientes clave como selenio, zinc y yodo que te ayudan a pensar con más claridad y concentrarte mejor." },
-  { icon: "❤️", title: "Come rico sin culpa", text: "Se terminaron las comidas aburridas. Platos que toda tu familia va a querer repetir." },
+  { icon: "💧", title: "Deshinchate desde la primera semana", text: "Recetas con alimentos antiinflamatorios que reducen la retención de líquidos y ese peso que sientes en el cuerpo y la cara cada mañana." },
+  { icon: "🧠", title: "Deja de adivinar qué puedes comer", text: "Una guía clara de alimentos permitidos y a evitar, adaptada a tu condición — sin contradicciones, sin confusión." },
+  { icon: "⚡", title: "Levántate sin ese cansancio que no se va", text: "Cada receta está pensada con nutrientes clave como selenio, zinc y yodo que apoyan naturalmente la función de tu tiroides." },
+  { icon: "❤️", title: "Come rico sin hacer dos comidas", text: "Platos que le gustan a toda la familia. No tienes que cocinar por separado ni comer aburrido para cuidarte." },
+  { icon: "🗓️", title: "Organiza tu semana sin complicarte", text: "Plan semanal + lista de compras lista para usar. Sabes exactamente qué cocinar cada día sin tener que pensar." },
 ];
 
 function Outcomes() {
@@ -314,22 +306,22 @@ function MidCTA() {
 
 const testimonials = [
   {
-    name: "María Elena Gutiérrez",
-    location: "Ciudad de México, México",
+    name: "María Elena G.",
+    location: "Ciudad de México",
     photo: testimonioElena,
-    text: "Hace 3 semanas que cocino con este recetario y la diferencia es impresionante. Mis desayunos con avena y semillas de calabaza se transformaron en mi ritual de cada mañana. Por fin algo que funciona y encima es rico.",
+    text: "Llevaba meses sin saber qué desayunar. Todo lo que encontraba en internet se contradecía y terminaba comiendo lo mismo de siempre. Con este recetario por fin tengo recetas claras, con ingredientes que consigo aquí, y que no me caen mal. Ya no me despierto tan hinchada por las mañanas.",
   },
   {
-    name: "Claudia Fernández Rivas",
+    name: "Claudia F.",
     location: "Bogotá, Colombia",
     photo: testimonioClaudia,
-    text: "Tengo hipertiroidismo y encontrar postres que pudiera comer sin sentirme mal era misión imposible. Probé la torta de banana con harina de almendras del recetario y no lo podía creer: riquísima y sin un solo ingrediente que me haga mal.",
+    text: "Tengo Hashimoto y lo más difícil era no saber qué podía comer sin sentirme peor. Probé varias recetas del recetario la primera semana y no podía creer que comer rico y cuidarme fueran la misma cosa. Las recetas usan ingredientes normales, nada raro ni caro.",
   },
   {
-    name: "Patricia Morales Vega",
+    name: "Patricia M.",
     location: "Lima, Perú",
     photo: testimonioPatricia,
-    text: "Lo que más me gustó es que las recetas usan ingredientes que consigo en cualquier supermercado. No tuve que comprar nada raro ni gastar de más. La sopa de lentejas con cúrcuma es mi favorita. 100% recomendado.",
+    text: "Lo que más me gustó es que no tengo que hacer una comida aparte para el resto de mi familia. Todos comemos lo mismo y nadie se queja. La sopa de lentejas con cúrcuma ya es fija en mi casa.",
   },
 ];
 
@@ -381,16 +373,12 @@ function SpecialOffer() {
           <span className="pill bg-[var(--brand-orange)] text-white text-sm font-bold">75% OFF</span>
           <p className="mt-5 text-white/60 line-through text-lg">Precio regular: {PRICE_REGULAR}</p>
           <p className="font-display text-6xl md:text-7xl font-bold mt-2 text-white">{PRICE_OFFER}</p>
-          <p className="mt-4 text-[var(--brand-orange-light)] font-semibold">
-            Quedan solo 23 copias con descuento 🔥
-          </p>
-
-          <div className="mt-8">
-            <Countdown />
-          </div>
 
           <div className="mt-8 flex flex-col items-center gap-3">
             <CTAButton />
+            <p className="text-sm text-white/75">
+              Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
+            </p>
             <RatingLine light />
           </div>
         </div>
@@ -433,17 +421,15 @@ function Guarantee() {
       <div className="max-w-3xl mx-auto bg-[var(--brand-green-light)] border-2 border-[var(--brand-green-accent)]/30 rounded-3xl p-8 md:p-12 text-center">
         <img
           src={garantiaHotmart}
-          alt="Garantía de 7 días con Hotmart"
+          alt="Garantía de 15 días con Hotmart"
           loading="lazy"
           className="mx-auto h-28 md:h-36 w-auto object-contain"
         />
         <h2 className="mt-6 font-display text-3xl md:text-4xl font-bold text-[var(--brand-green-dark)]">
-          Garantía Total de 7 Días
+          Garantía de 15 días
         </h2>
         <p className="mt-4 text-[var(--brand-text)]/80 leading-relaxed">
-          Tienes 7 días enteros para revisar el material, aplicar lo que aprendiste y ver los resultados.
-          Si no quedas del todo conforme, pides el reembolso y te devolvemos todo. Es riesgo CERO para ti
-          y compromiso total de nuestra parte.
+          Tienes 15 días para revisar el material, preparar las recetas y ver cómo te sientes. Si no estás conforme por cualquier motivo, pides el reembolso y te devolvemos todo. Sin preguntas, sin complicaciones.
         </p>
       </div>
     </section>
