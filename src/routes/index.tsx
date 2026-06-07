@@ -337,8 +337,14 @@ function MidCTA() {
             className="w-full h-auto block"
           />
         </div>
-        <div className="flex flex-col items-center gap-4">
-          <CTAButton />
+        <h2 className="font-display text-2xl md:text-4xl font-bold leading-tight max-w-2xl mx-auto">
+          Empieza hoy mismo a disfrutar de una cocina más simple y organizada.
+        </h2>
+        <div className="mt-8 flex flex-col items-center gap-4">
+          <CTAButton>QUIERO ACCEDER A LA BIBLIOTECA</CTAButton>
+          <p className="text-sm text-white/75">
+            Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
+          </p>
           <RatingLine light />
           <GuaranteePill light />
         </div>
