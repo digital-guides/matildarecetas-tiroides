@@ -579,9 +579,10 @@ function Landing() {
       <MatildaStory />
       <PainSection />
       <ProductIntro />
-      <Outcomes />
       <WhatsInside />
+      <ValueStack />
       <MidCTA />
+      <Outcomes />
       <Testimonials />
       <SpecialOffer />
       <WhatsIncluded />
