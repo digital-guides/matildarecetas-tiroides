@@ -100,7 +100,7 @@ const painPoints = [
 
 function MatildaStory() {
   return (
-    <section className="bg-[#FAF7F2] py-16 md:py-24 px-5">
+    <section className="bg-[#FAF7F2] py-12 md:py-16 px-5">
       <div className="max-w-[680px] mx-auto">
         <div className="flex items-center gap-4">
           <img
@@ -113,17 +113,13 @@ function MatildaStory() {
             className="w-16 h-16 md:w-18 md:h-18 rounded-full object-cover shadow-md ring-2 ring-white"
           />
           <span className="font-bold text-lg md:text-xl text-[var(--brand-green-dark)]">
-            Matilda García
+            Hola, soy Matilda 👋
           </span>
         </div>
-        <div className="mt-6 space-y-5 text-base md:text-[17px] leading-relaxed text-[#374151]">
-          <p>Me llamo Matilda. Tengo 36 años y por casi tres años no entendía qué me pasaba.</p>
-          <p>Me despertaba hinchada aunque casi no hubiera comido. Se me caía el pelo a puños y mi cara se veía cansada todo el tiempo. Tomaba mis medicamentos, intentaba comer bien — y cada día me sentía peor. El médico me decía que mis análisis estaban bien. Que me cuidara. Que comiera sano.</p>
-          <p>¿Pero qué significa comer sano cuando tienes tiroides? Nadie me lo explicaba. Cada página de internet me decía algo distinto. El brócoli sí, el brócoli no. La soya te ayuda, la soya te hace mal. Me volví loca buscando respuestas que nunca llegaban.</p>
-          <p>Hasta que una nutricionista miró mis análisis diferente y me dijo algo que cambió todo: <em>“Tu tiroides está funcionando, pero lo que comes la está frenando todos los días.”</em></p>
-          <p>Nadie me había dicho eso antes. Empecé a cambiar lo que ponía en mi plato — sin dietas imposibles, sin dejar de comer rico. Solo aprendiendo qué alimentos ayudan a mi tiroides y cuáles la sabotean sin que yo lo supiera.</p>
-          <p>En ocho semanas bajé 6 kilos. La hinchazón bajó. El cansancio que me acompañó tres años desapareció casi sin darme cuenta.</p>
-          <p>Por eso creé este recetario. Porque lo que me faltaba no era otra pastilla ni otro médico — era saber cómo cocinar para mi condición.</p>
+        <div className="mt-6 space-y-4 text-base md:text-[17px] leading-relaxed text-[#374151]">
+          <p>Durante años vi a muchas personas sentirse confundidas sobre qué cocinar cuando tenían problemas de tiroides.</p>
+          <p>Entre consejos contradictorios, listas interminables de alimentos y recetas complicadas, muchas terminaban comiendo siempre lo mismo o pasando horas buscando información.</p>
+          <p>Por eso reuní mis recetas favoritas en una guía práctica con desayunos, almuerzos, cenas, postres, plan semanal y lista de compras para ayudarte a cocinar con más tranquilidad, variedad y confianza.</p>
         </div>
       </div>
     </section>
@@ -161,11 +157,11 @@ function ProductIntro() {
     <section className="bg-[var(--brand-green-light)] py-16 md:py-24 px-5">
       <div className="max-w-5xl mx-auto text-center">
         <span className="pill bg-white text-[var(--brand-green-accent)] border border-[var(--brand-green-accent)]/20 text-xs tracking-widest">
-          TU NUEVO RECETARIO
+          TU NUEVA BIBLIOTECA
         </span>
         <h2 className="mt-5 font-display text-3xl md:text-5xl font-bold text-[var(--brand-green-dark)] leading-tight">
-          Más que un recetario: <br className="hidden md:block" />
-          <span className="text-[var(--brand-green-accent)]">una guía práctica para tu tiroides</span>
+          La Biblioteca de Recetas para Tiroides <br className="hidden md:block" />
+          <span className="text-[var(--brand-green-accent)]">de Matilda™</span>
         </h2>
         <p className="mt-6 text-lg text-[var(--brand-text)]/80 max-w-3xl mx-auto leading-relaxed">
           Una guía práctica para saber qué comer, cómo organizar tu semana y cómo adaptar tus comidas con recetas fáciles, plan semanal, lista de compras, alimentos aliados y reemplazos inteligentes.
@@ -201,11 +197,12 @@ function BenefitCards() {
 }
 
 const outcomes = [
-  { icon: "💧", title: "Deshinchate desde la primera semana", text: "Recetas con alimentos antiinflamatorios que reducen la retención de líquidos y ese peso que sientes en el cuerpo y la cara cada mañana." },
-  { icon: "🧠", title: "Deja de adivinar qué puedes comer", text: "Una guía clara de alimentos permitidos y a evitar, adaptada a tu condición — sin contradicciones, sin confusión." },
-  { icon: "⚡", title: "Levántate sin ese cansancio que no se va", text: "Cada receta está pensada con nutrientes clave como selenio, zinc y yodo que apoyan naturalmente la función de tu tiroides." },
-  { icon: "❤️", title: "Come rico sin hacer dos comidas", text: "Platos que le gustan a toda la familia. No tienes que cocinar por separado ni comer aburrido para cuidarte." },
-  { icon: "🗓️", title: "Organiza tu semana sin complicarte", text: "Plan semanal + lista de compras lista para usar. Sabes exactamente qué cocinar cada día sin tener que pensar." },
+  { icon: "⏱️", title: "Menos tiempo pensando qué cocinar", text: "Recetas y plan semanal listos para usar cada día." },
+  { icon: "🍽️", title: "Más variedad en cada comida", text: "Desayunos, almuerzos y cenas para no repetir lo mismo." },
+  { icon: "📚", title: "Ideas listas para consultar", text: "Una biblioteca que puedes abrir cuando la necesites." },
+  { icon: "🗓️", title: "Más organización en tu semana", text: "Planifica con anticipación y compra solo lo necesario." },
+  { icon: "✨", title: "Menos confusión, más claridad", text: "Información ordenada en un solo lugar, sin contradicciones." },
+  { icon: "📖", title: "Una colección práctica a tu alcance", text: "Acceso de por vida desde tu celular o computadora." },
 ];
 
 function Outcomes() {
@@ -213,7 +210,7 @@ function Outcomes() {
     <section className="bg-white py-16 md:py-24 px-5">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-center font-display text-3xl md:text-5xl font-bold text-[var(--brand-green-dark)]">
-          Lo que vas a lograr
+          ¿Por qué esta biblioteca te hará la vida más fácil?
         </h2>
         <div className="mt-12 space-y-5">
           {outcomes.map((o) => (
@@ -227,6 +224,50 @@ function Outcomes() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const valueItems = [
+  { icon: "📖", title: "Biblioteca de Recetas para Tiroides", price: "$27" },
+  { icon: "🗓️", title: "Planificador Semanal", price: "$12" },
+  { icon: "🛒", title: "Lista Inteligente de Compras", price: "$9" },
+  { icon: "📋", title: "Guía de Alimentos", price: "$19" },
+  { icon: "🎁", title: "Recursos y actualizaciones futuras", price: "$10" },
+];
+
+function ValueStack() {
+  return (
+    <section className="bg-[var(--brand-soft)] py-16 md:py-24 px-5">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-center font-display text-3xl md:text-5xl font-bold text-[var(--brand-green-dark)]">
+          Todo el valor que recibes hoy
+        </h2>
+        <div className="mt-10 bg-white rounded-3xl shadow-[var(--shadow-card)] border border-[var(--brand-green-light)] overflow-hidden">
+          <ul className="divide-y divide-[var(--brand-green-light)]">
+            {valueItems.map((v) => (
+              <li key={v.title} className="flex items-center gap-4 p-5 md:p-6">
+                <div className="w-12 h-12 shrink-0 rounded-xl bg-[var(--brand-green-light)] flex items-center justify-center text-2xl">
+                  {v.icon}
+                </div>
+                <div className="flex-1">
+                  <p className="font-semibold text-[var(--brand-green-dark)] leading-tight">{v.title}</p>
+                  <p className="text-sm text-[var(--brand-text)]/60 mt-0.5">Valor referencial</p>
+                </div>
+                <span className="font-display text-xl md:text-2xl font-bold text-[var(--brand-green-accent)]">{v.price}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="bg-[var(--brand-green-light)] p-6 md:p-7 text-center">
+            <p className="text-[var(--brand-text)]/70">
+              Valor total estimado: <span className="line-through font-semibold">$77</span>
+            </p>
+            <p className="mt-2 font-display text-2xl md:text-3xl font-bold text-[var(--brand-green-dark)]">
+              Hoy puedes acceder por solo <span className="text-[var(--brand-orange)]">$17</span>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -296,8 +337,14 @@ function MidCTA() {
             className="w-full h-auto block"
           />
         </div>
-        <div className="flex flex-col items-center gap-4">
-          <CTAButton />
+        <h2 className="font-display text-2xl md:text-4xl font-bold leading-tight max-w-2xl mx-auto">
+          Empieza hoy mismo a disfrutar de una cocina más simple y organizada.
+        </h2>
+        <div className="mt-8 flex flex-col items-center gap-4">
+          <CTAButton>QUIERO ACCEDER A LA BIBLIOTECA</CTAButton>
+          <p className="text-sm text-white/75">
+            Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
+          </p>
           <RatingLine light />
           <GuaranteePill light />
         </div>
@@ -532,9 +579,10 @@ function Landing() {
       <MatildaStory />
       <PainSection />
       <ProductIntro />
-      <Outcomes />
       <WhatsInside />
+      <ValueStack />
       <MidCTA />
+      <Outcomes />
       <Testimonials />
       <SpecialOffer />
       <WhatsIncluded />
