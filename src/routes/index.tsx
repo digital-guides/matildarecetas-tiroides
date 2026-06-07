@@ -100,7 +100,7 @@ const painPoints = [
 
 function MatildaStory() {
   return (
-    <section className="bg-[#FAF7F2] py-16 md:py-24 px-5">
+    <section className="bg-[#FAF7F2] py-12 md:py-16 px-5">
       <div className="max-w-[680px] mx-auto">
         <div className="flex items-center gap-4">
           <img
@@ -113,17 +113,13 @@ function MatildaStory() {
             className="w-16 h-16 md:w-18 md:h-18 rounded-full object-cover shadow-md ring-2 ring-white"
           />
           <span className="font-bold text-lg md:text-xl text-[var(--brand-green-dark)]">
-            Matilda García
+            Hola, soy Matilda 👋
           </span>
         </div>
-        <div className="mt-6 space-y-5 text-base md:text-[17px] leading-relaxed text-[#374151]">
-          <p>Me llamo Matilda. Tengo 36 años y por casi tres años no entendía qué me pasaba.</p>
-          <p>Me despertaba hinchada aunque casi no hubiera comido. Se me caía el pelo a puños y mi cara se veía cansada todo el tiempo. Tomaba mis medicamentos, intentaba comer bien — y cada día me sentía peor. El médico me decía que mis análisis estaban bien. Que me cuidara. Que comiera sano.</p>
-          <p>¿Pero qué significa comer sano cuando tienes tiroides? Nadie me lo explicaba. Cada página de internet me decía algo distinto. El brócoli sí, el brócoli no. La soya te ayuda, la soya te hace mal. Me volví loca buscando respuestas que nunca llegaban.</p>
-          <p>Hasta que una nutricionista miró mis análisis diferente y me dijo algo que cambió todo: <em>“Tu tiroides está funcionando, pero lo que comes la está frenando todos los días.”</em></p>
-          <p>Nadie me había dicho eso antes. Empecé a cambiar lo que ponía en mi plato — sin dietas imposibles, sin dejar de comer rico. Solo aprendiendo qué alimentos ayudan a mi tiroides y cuáles la sabotean sin que yo lo supiera.</p>
-          <p>En ocho semanas bajé 6 kilos. La hinchazón bajó. El cansancio que me acompañó tres años desapareció casi sin darme cuenta.</p>
-          <p>Por eso creé este recetario. Porque lo que me faltaba no era otra pastilla ni otro médico — era saber cómo cocinar para mi condición.</p>
+        <div className="mt-6 space-y-4 text-base md:text-[17px] leading-relaxed text-[#374151]">
+          <p>Durante años vi a muchas personas sentirse confundidas sobre qué cocinar cuando tenían problemas de tiroides.</p>
+          <p>Entre consejos contradictorios, listas interminables de alimentos y recetas complicadas, muchas terminaban comiendo siempre lo mismo o pasando horas buscando información.</p>
+          <p>Por eso reuní mis recetas favoritas en una guía práctica con desayunos, almuerzos, cenas, postres, plan semanal y lista de compras para ayudarte a cocinar con más tranquilidad, variedad y confianza.</p>
         </div>
       </div>
     </section>
