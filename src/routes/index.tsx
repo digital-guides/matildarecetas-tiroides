@@ -54,10 +54,10 @@ function Hero() {
           Las Recetas de Matilda
         </span>
         <h1 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1]">
-          ¿Ya no sabes qué comer con la tiroides y cada día te sientes peor aunque sigas las indicaciones del médico?
+          Deja de preguntarte qué cocinar cuando tienes problemas de tiroides
         </h1>
         <p className="mt-6 text-base md:text-lg text-white/85 max-w-3xl mx-auto leading-relaxed">
-          Una guía práctica con 60 recetas organizadas, lista de compras y plan semanal — para que dejes de adivinar qué puedes comer y empieces a sentirte mejor desde tu cocina.
+          60 recetas deliciosas + plan semanal + lista de compras para ayudarte a organizar tus comidas de forma simple, práctica y sin pasar horas buscando información en internet.
         </p>
 
         <div className="mt-10 rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10 max-w-4xl mx-auto">
@@ -72,7 +72,7 @@ function Hero() {
         </div>
 
         <div className="mt-10 flex flex-col items-center gap-3">
-          <CTAButton />
+          <CTAButton>QUIERO MIS 60 RECETAS</CTAButton>
           <p className="text-sm text-white/75">
             Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
           </p>
