@@ -389,14 +389,12 @@ function SpecialOffer() {
 
         <div className="mt-10 bg-[var(--brand-green-deep)] rounded-3xl p-8 md:p-10 border-2 border-[var(--brand-green-accent)] shadow-2xl">
           <span className="pill bg-[var(--brand-orange)] text-white text-sm font-bold">75% OFF</span>
-          <p className="mt-5 text-white/60 line-through text-lg">Precio regular: {PRICE_REGULAR}</p>
-          <p className="font-display text-6xl md:text-7xl font-bold mt-2 text-white">{PRICE_OFFER}</p>
+          <p className="mt-5 text-white/60 line-through text-lg">Regular {PRICE_REGULAR}</p>
+          <p className="mt-2 text-white/80 text-sm tracking-widest uppercase">Precio de lanzamiento</p>
+          <p className="font-display text-6xl md:text-7xl font-bold mt-1 text-white">{PRICE_OFFER}</p>
 
           <div className="mt-8 flex flex-col items-center gap-3">
             <CTAButton />
-            <p className="text-sm text-white/75">
-              Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
-            </p>
             <RatingLine light />
           </div>
         </div>
