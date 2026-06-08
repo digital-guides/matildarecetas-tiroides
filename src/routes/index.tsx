@@ -72,15 +72,33 @@ function Hero() {
         </div>
 
         <div className="mt-10 flex flex-col items-center gap-3">
-          <CTAButton />
-          <p className="text-sm text-white/75">
-            Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
-          </p>
+          <CTAButton href="#cta-compra" />
           <p className="text-sm md:text-base text-white/90">
-            <span className="line-through text-white/60">$27</span>
+            <span className="line-through text-white/60">$37</span>
             <span className="mx-2">·</span>
             Hoy: <span className="font-bold text-[var(--brand-orange-light)]">$17</span>
           </p>
+          <figure className="mt-4 max-w-xl mx-auto bg-white/5 border border-white/10 rounded-2xl p-5 text-left">
+            <div className="flex items-center gap-3">
+              <img
+                src={testimonioElena}
+                alt="María Elena G."
+                width={48}
+                height={48}
+                loading="lazy"
+                decoding="async"
+                className="w-12 h-12 rounded-full object-cover ring-2 ring-white/20"
+              />
+              <div>
+                <p className="font-semibold text-white leading-tight">María Elena G.</p>
+                <p className="text-xs text-white/60">Ciudad de México</p>
+              </div>
+              <span className="ml-auto text-[var(--brand-gold)] tracking-wider text-sm">★★★★★</span>
+            </div>
+            <blockquote className="mt-3 text-sm md:text-[15px] text-white/85 leading-relaxed">
+              “Llevaba meses sin saber qué desayunar. Todo lo que encontraba en internet se contradecía y terminaba comiendo lo mismo de siempre. Con este recetario por fin tengo recetas claras, con ingredientes que consigo aquí, y que no me caen mal. Ya no me despierto tan hinchada por las mañanas.”
+            </blockquote>
+          </figure>
           <RatingLine light />
           <GuaranteePill light />
         </div>
