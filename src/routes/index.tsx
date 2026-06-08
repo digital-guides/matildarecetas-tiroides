@@ -299,7 +299,7 @@ function WhatsInside() {
 
 function MidCTA() {
   return (
-    <section className="bg-[var(--brand-green-dark)] text-white py-16 md:py-20 px-5">
+    <section id="cta-compra" className="bg-[var(--brand-green-dark)] text-white py-16 md:py-20 px-5 scroll-mt-16">
       <div className="max-w-4xl mx-auto text-center">
         <div className="rounded-3xl overflow-hidden shadow-xl ring-1 ring-white/10 mb-10">
           <img
