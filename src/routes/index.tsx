@@ -435,7 +435,7 @@ function FAQ() {
 
 function FinalCTA() {
   return (
-    <section className="bg-[var(--brand-green-dark)] text-white py-16 md:py-24 px-5">
+    <section id="cta-final" className="bg-[var(--brand-green-dark)] text-white py-16 md:py-24 px-5 scroll-mt-16">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight">
           Empieza a cocinar para tu salud <span className="text-[var(--brand-orange-light)]">hoy</span>
