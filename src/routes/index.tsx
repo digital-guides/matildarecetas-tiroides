@@ -72,15 +72,33 @@ function Hero() {
         </div>
 
         <div className="mt-10 flex flex-col items-center gap-3">
-          <CTAButton />
-          <p className="text-sm text-white/75">
-            Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
-          </p>
+          <CTAButton href="#cta-compra" />
           <p className="text-sm md:text-base text-white/90">
-            <span className="line-through text-white/60">$27</span>
+            <span className="line-through text-white/60">$37</span>
             <span className="mx-2">·</span>
             Hoy: <span className="font-bold text-[var(--brand-orange-light)]">$17</span>
           </p>
+          <figure className="mt-4 max-w-xl mx-auto bg-white/5 border border-white/10 rounded-2xl p-5 text-left">
+            <div className="flex items-center gap-3">
+              <img
+                src={testimonioElena}
+                alt="María Elena G."
+                width={48}
+                height={48}
+                loading="lazy"
+                decoding="async"
+                className="w-12 h-12 rounded-full object-cover ring-2 ring-white/20"
+              />
+              <div>
+                <p className="font-semibold text-white leading-tight">María Elena G.</p>
+                <p className="text-xs text-white/60">Ciudad de México</p>
+              </div>
+              <span className="ml-auto text-[var(--brand-gold)] tracking-wider text-sm">★★★★★</span>
+            </div>
+            <blockquote className="mt-3 text-sm md:text-[15px] text-white/85 leading-relaxed">
+              “Llevaba meses sin saber qué desayunar. Todo lo que encontraba en internet se contradecía y terminaba comiendo lo mismo de siempre. Con este recetario por fin tengo recetas claras, con ingredientes que consigo aquí, y que no me caen mal. Ya no me despierto tan hinchada por las mañanas.”
+            </blockquote>
+          </figure>
           <RatingLine light />
           <GuaranteePill light />
         </div>
@@ -117,13 +135,11 @@ function MatildaStory() {
           </span>
         </div>
         <div className="mt-6 space-y-5 text-base md:text-[17px] leading-relaxed text-[#374151]">
-          <p>Me llamo Matilda. Tengo 36 años y por casi tres años no entendía qué me pasaba.</p>
-          <p>Me despertaba hinchada aunque casi no hubiera comido. Se me caía el pelo a puños y mi cara se veía cansada todo el tiempo. Tomaba mis medicamentos, intentaba comer bien — y cada día me sentía peor. El médico me decía que mis análisis estaban bien. Que me cuidara. Que comiera sano.</p>
-          <p>¿Pero qué significa comer sano cuando tienes tiroides? Nadie me lo explicaba. Cada página de internet me decía algo distinto. El brócoli sí, el brócoli no. La soya te ayuda, la soya te hace mal. Me volví loca buscando respuestas que nunca llegaban.</p>
-          <p>Hasta que una nutricionista miró mis análisis diferente y me dijo algo que cambió todo: <em>“Tu tiroides está funcionando, pero lo que comes la está frenando todos los días.”</em></p>
-          <p>Nadie me había dicho eso antes. Empecé a cambiar lo que ponía en mi plato — sin dietas imposibles, sin dejar de comer rico. Solo aprendiendo qué alimentos ayudan a mi tiroides y cuáles la sabotean sin que yo lo supiera.</p>
-          <p>En ocho semanas bajé 6 kilos. La hinchazón bajó. El cansancio que me acompañó tres años desapareció casi sin darme cuenta.</p>
-          <p>Por eso creé este recetario. Porque lo que me faltaba no era otra pastilla ni otro médico — era saber cómo cocinar para mi condición.</p>
+          <p>Cuando me diagnosticaron un problema de tiroides pensé que lo más difícil sería tomar la medicación.</p>
+          <p>Pero con el tiempo descubrí que lo que más me agotaba era no saber qué comer.</p>
+          <p>Buscaba información en internet y terminaba más confundida que antes. Un día leía que evitara el brócoli, al siguiente que no había problema. Lo mismo con la avena, la soja y muchos otros alimentos. Sentía que cada página decía algo diferente.</p>
+          <p>Llegó un momento en que abría la cocina y pensaba: “¿Qué puedo preparar hoy sin estar equivocándome otra vez?”</p>
+          <p>Lo que necesitaba no era una dieta extrema. Necesitaba una guía clara, recetas sencillas y dejar de pasar horas investigando cada ingrediente.</p>
         </div>
       </div>
     </section>
@@ -156,24 +172,6 @@ function PainSection() {
   );
 }
 
-function ProductIntro() {
-  return (
-    <section className="bg-[var(--brand-green-light)] py-16 md:py-24 px-5">
-      <div className="max-w-5xl mx-auto text-center">
-        <span className="pill bg-white text-[var(--brand-green-accent)] border border-[var(--brand-green-accent)]/20 text-xs tracking-widest">
-          TU NUEVO RECETARIO
-        </span>
-        <h2 className="mt-5 font-display text-3xl md:text-5xl font-bold text-[var(--brand-green-dark)] leading-tight">
-          Más que un recetario: <br className="hidden md:block" />
-          <span className="text-[var(--brand-green-accent)]">una guía práctica para tu tiroides</span>
-        </h2>
-        <p className="mt-6 text-lg text-[var(--brand-text)]/80 max-w-3xl mx-auto leading-relaxed">
-          Una guía práctica para saber qué comer, cómo organizar tu semana y cómo adaptar tus comidas con recetas fáciles, plan semanal, lista de compras, alimentos aliados y reemplazos inteligentes.
-        </p>
-      </div>
-    </section>
-  );
-}
 
 const benefits = [
   { icon: "🍽️", title: "60 Recetas Completas", text: "Desayunos, almuerzos, cenas y postres para todo el día." },
@@ -283,7 +281,7 @@ function WhatsInside() {
 
 function MidCTA() {
   return (
-    <section className="bg-[var(--brand-green-dark)] text-white py-16 md:py-20 px-5">
+    <section id="cta-compra" className="bg-[var(--brand-green-dark)] text-white py-16 md:py-20 px-5 scroll-mt-16">
       <div className="max-w-4xl mx-auto text-center">
         <div className="rounded-3xl overflow-hidden shadow-xl ring-1 ring-white/10 mb-10">
           <img
@@ -373,14 +371,12 @@ function SpecialOffer() {
 
         <div className="mt-10 bg-[var(--brand-green-deep)] rounded-3xl p-8 md:p-10 border-2 border-[var(--brand-green-accent)] shadow-2xl">
           <span className="pill bg-[var(--brand-orange)] text-white text-sm font-bold">75% OFF</span>
-          <p className="mt-5 text-white/60 line-through text-lg">Precio regular: {PRICE_REGULAR}</p>
-          <p className="font-display text-6xl md:text-7xl font-bold mt-2 text-white">{PRICE_OFFER}</p>
+          <p className="mt-5 text-white/60 line-through text-lg">Regular {PRICE_REGULAR}</p>
+          <p className="mt-2 text-white/80 text-sm tracking-widest uppercase">Precio de lanzamiento</p>
+          <p className="font-display text-6xl md:text-7xl font-bold mt-1 text-white">{PRICE_OFFER}</p>
 
           <div className="mt-8 flex flex-col items-center gap-3">
             <CTAButton />
-            <p className="text-sm text-white/75">
-              Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
-            </p>
             <RatingLine light />
           </div>
         </div>
@@ -389,33 +385,6 @@ function SpecialOffer() {
   );
 }
 
-const includes = [
-  { icon: "📱", title: "Acceso desde el celular y la computadora" },
-  { icon: "✉️", title: "Entrega inmediata por mail" },
-  { icon: "♾️", title: "Acceso de por vida + actualizaciones" },
-];
-
-function WhatsIncluded() {
-  return (
-    <section className="bg-white py-16 md:py-24 px-5">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-center font-display text-3xl md:text-5xl font-bold text-[var(--brand-green-dark)]">
-          ¿Qué incluye?
-        </h2>
-        <div className="mt-12 grid md:grid-cols-3 gap-6">
-          {includes.map((it) => (
-            <div key={it.title} className="bg-[var(--brand-green-light)] rounded-2xl p-7 text-center shadow-sm">
-              <div className="w-16 h-16 mx-auto rounded-2xl bg-white flex items-center justify-center text-3xl shadow-sm">
-                {it.icon}
-              </div>
-              <p className="mt-5 font-semibold text-[var(--brand-green-dark)] text-lg leading-snug">{it.title}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Guarantee() {
   return (
@@ -491,9 +460,6 @@ function FinalCTA() {
         </div>
         <div className="mt-10 flex flex-col items-center gap-4">
           <CTAButton />
-          <p className="text-sm text-white/75">
-            Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
-          </p>
           <RatingLine light />
           <GuaranteePill light />
         </div>
@@ -529,15 +495,13 @@ function Landing() {
     <div className="min-h-screen bg-white">
       {fontsLink}
       <Hero />
-      <MatildaStory />
       <PainSection />
-      <ProductIntro />
+      <MatildaStory />
       <Outcomes />
       <WhatsInside />
       <MidCTA />
       <Testimonials />
       <SpecialOffer />
-      <WhatsIncluded />
       <Guarantee />
       <FAQ />
       <FinalCTA />

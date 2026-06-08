@@ -18,12 +18,14 @@ function buildCheckoutUrl(): string {
   }
 }
 
-export function CTAButton({ children = "🦋 QUIERO CUIDAR MI TIROIDES", className = "" }: { children?: React.ReactNode; className?: string }) {
-  const [href, setHref] = useState(CHECKOUT_URL);
+export function CTAButton({ children = "🦋 QUIERO CUIDAR MI TIROIDES", className = "", href: hrefOverride }: { children?: React.ReactNode; className?: string; href?: string }) {
+  const [href, setHref] = useState(hrefOverride ?? CHECKOUT_URL);
   useEffect(() => {
+    if (hrefOverride) return;
     setHref(buildCheckoutUrl());
   }, []);
   const handleClick = () => {
+    if (hrefOverride) return;
     if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
       (window as any).fbq("track", "InitiateCheckout", {
         content_name: "Cocina Deliciosa para Tiroides",
