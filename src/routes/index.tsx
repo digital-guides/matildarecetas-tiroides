@@ -135,13 +135,11 @@ function MatildaStory() {
           </span>
         </div>
         <div className="mt-6 space-y-5 text-base md:text-[17px] leading-relaxed text-[#374151]">
-          <p>Me llamo Matilda. Tengo 36 años y por casi tres años no entendía qué me pasaba.</p>
-          <p>Me despertaba hinchada aunque casi no hubiera comido. Se me caía el pelo a puños y mi cara se veía cansada todo el tiempo. Tomaba mis medicamentos, intentaba comer bien — y cada día me sentía peor. El médico me decía que mis análisis estaban bien. Que me cuidara. Que comiera sano.</p>
-          <p>¿Pero qué significa comer sano cuando tienes tiroides? Nadie me lo explicaba. Cada página de internet me decía algo distinto. El brócoli sí, el brócoli no. La soya te ayuda, la soya te hace mal. Me volví loca buscando respuestas que nunca llegaban.</p>
-          <p>Hasta que una nutricionista miró mis análisis diferente y me dijo algo que cambió todo: <em>“Tu tiroides está funcionando, pero lo que comes la está frenando todos los días.”</em></p>
-          <p>Nadie me había dicho eso antes. Empecé a cambiar lo que ponía en mi plato — sin dietas imposibles, sin dejar de comer rico. Solo aprendiendo qué alimentos ayudan a mi tiroides y cuáles la sabotean sin que yo lo supiera.</p>
-          <p>En ocho semanas bajé 6 kilos. La hinchazón bajó. El cansancio que me acompañó tres años desapareció casi sin darme cuenta.</p>
-          <p>Por eso creé este recetario. Porque lo que me faltaba no era otra pastilla ni otro médico — era saber cómo cocinar para mi condición.</p>
+          <p>Cuando me diagnosticaron un problema de tiroides pensé que lo más difícil sería tomar la medicación.</p>
+          <p>Pero con el tiempo descubrí que lo que más me agotaba era no saber qué comer.</p>
+          <p>Buscaba información en internet y terminaba más confundida que antes. Un día leía que evitara el brócoli, al siguiente que no había problema. Lo mismo con la avena, la soja y muchos otros alimentos. Sentía que cada página decía algo diferente.</p>
+          <p>Llegó un momento en que abría la cocina y pensaba: “¿Qué puedo preparar hoy sin estar equivocándome otra vez?”</p>
+          <p>Lo que necesitaba no era una dieta extrema. Necesitaba una guía clara, recetas sencillas y dejar de pasar horas investigando cada ingrediente.</p>
         </div>
       </div>
     </section>
