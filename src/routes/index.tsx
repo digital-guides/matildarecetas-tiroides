@@ -505,9 +505,6 @@ function FinalCTA() {
         </div>
         <div className="mt-10 flex flex-col items-center gap-4">
           <CTAButton />
-          <p className="text-sm text-white/75">
-            Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
-          </p>
           <RatingLine light />
           <GuaranteePill light />
         </div>
