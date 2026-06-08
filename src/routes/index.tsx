@@ -172,24 +172,6 @@ function PainSection() {
   );
 }
 
-function ProductIntro() {
-  return (
-    <section className="bg-[var(--brand-green-light)] py-16 md:py-24 px-5">
-      <div className="max-w-5xl mx-auto text-center">
-        <span className="pill bg-white text-[var(--brand-green-accent)] border border-[var(--brand-green-accent)]/20 text-xs tracking-widest">
-          TU NUEVO RECETARIO
-        </span>
-        <h2 className="mt-5 font-display text-3xl md:text-5xl font-bold text-[var(--brand-green-dark)] leading-tight">
-          Más que un recetario: <br className="hidden md:block" />
-          <span className="text-[var(--brand-green-accent)]">una guía práctica para tu tiroides</span>
-        </h2>
-        <p className="mt-6 text-lg text-[var(--brand-text)]/80 max-w-3xl mx-auto leading-relaxed">
-          Una guía práctica para saber qué comer, cómo organizar tu semana y cómo adaptar tus comidas con recetas fáciles, plan semanal, lista de compras, alimentos aliados y reemplazos inteligentes.
-        </p>
-      </div>
-    </section>
-  );
-}
 
 const benefits = [
   { icon: "🍽️", title: "60 Recetas Completas", text: "Desayunos, almuerzos, cenas y postres para todo el día." },
