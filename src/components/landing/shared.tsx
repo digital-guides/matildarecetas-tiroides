@@ -18,8 +18,8 @@ function buildCheckoutUrl(): string {
   }
 }
 
-export function CTAButton({ children = "🦋 QUIERO CUIDAR MI TIROIDES", className = "" }: { children?: React.ReactNode; className?: string }) {
-  const [href, setHref] = useState(CHECKOUT_URL);
+export function CTAButton({ children = "🦋 QUIERO CUIDAR MI TIROIDES", className = "", href: hrefOverride }: { children?: React.ReactNode; className?: string; href?: string }) {
+  const [href, setHref] = useState(hrefOverride ?? CHECKOUT_URL);
   useEffect(() => {
     setHref(buildCheckoutUrl());
   }, []);
