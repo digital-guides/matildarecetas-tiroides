@@ -25,6 +25,7 @@ export function CTAButton({ children = "🦋 QUIERO CUIDAR MI TIROIDES", classNa
     setHref(buildCheckoutUrl());
   }, []);
   const handleClick = () => {
+    if (hrefOverride) return;
     if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
       (window as any).fbq("track", "InitiateCheckout", {
         content_name: "Cocina Deliciosa para Tiroides",
