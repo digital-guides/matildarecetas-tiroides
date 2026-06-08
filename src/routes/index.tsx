@@ -90,12 +90,11 @@ function Hero() {
 }
 
 const painPoints = [
-  "😩 Te diagnosticaron hipotiroidismo, hipertiroidismo o Hashimoto y nadie te explicó qué puedes comer y qué no. Cada vez que buscas en internet encuentras información diferente y terminas más confundida que antes.",
-  "🫠 Te despiertas hinchada aunque casi no hayas comido. Sientes la cara pesada, el cuerpo inflado — y no sabes qué alimento te lo está causando.",
-  "💇‍♀️ Se te cae mucho cabello y no sabes si es por la tiroides, por los medicamentos o por lo que estás comiendo. Nadie te da una respuesta clara.",
-  "⚖️ El peso no baja aunque comas poco. Tu metabolismo no responde y ninguna dieta te funciona — porque ninguna está pensada para tu condición tiroidea.",
-  "😔 Sientes que comer para la tiroides es aburrido y siempre lo mismo. Terminas comiendo lo de siempre porque no sabes qué más preparar — o haces dos comidas distintas porque tu familia no quiere comer 'comida de enfermo'.",
-  "🥱 La fatiga, la piel seca, el estreñimiento, la irritabilidad — llevas meses o años así y nadie te da un plan concreto de qué comer para sentirte mejor.",
+  "⚖️ Comes menos y aún así sientes que nada cambia.",
+  "🔍 Una página dice 'elimina el gluten', la siguiente dice que no. Una recomienda crucíferas, otra las prohíbe. Terminas más confundida que al principio.",
+  "🔄 Pruebas una dieta, la dejas, empiezas otra. Y sigues sin saber qué deberías cocinar realmente.",
+  "💊 Tomas tu medicación a tiempo, pero a la hora de planear las comidas sigues completamente perdida.",
+  "🍽️ Pasas más tiempo investigando en internet qué puedes comer que cocinando tranquila.",
 ];
 
 function MatildaStory() {
@@ -297,7 +296,7 @@ function MidCTA() {
           />
         </div>
         <div className="flex flex-col items-center gap-4">
-          <CTAButton />
+          <CTAButton>Quiero dejar de adivinar qué cocinar</CTAButton>
           <RatingLine light />
           <GuaranteePill light />
         </div>
@@ -372,12 +371,13 @@ function SpecialOffer() {
         <p className="mt-4 text-white/80 text-lg">Llévate hoy las 60 recetas con un descuento insuperable</p>
 
         <div className="mt-10 bg-[var(--brand-green-deep)] rounded-3xl p-8 md:p-10 border-2 border-[var(--brand-green-accent)] shadow-2xl">
-          <span className="pill bg-[var(--brand-orange)] text-white text-sm font-bold">75% OFF</span>
-          <p className="mt-5 text-white/60 line-through text-lg">Precio regular: {PRICE_REGULAR}</p>
-          <p className="font-display text-6xl md:text-7xl font-bold mt-2 text-white">{PRICE_OFFER}</p>
+          <span className="pill bg-[var(--brand-orange)] text-white text-sm font-bold">Precio de lanzamiento</span>
+          <p className="mt-5 text-white/60 line-through text-lg">$37</p>
+          <p className="font-display text-6xl md:text-7xl font-bold mt-2 text-white">$17</p>
+          <p className="mt-3 text-sm text-[var(--brand-orange-light)] font-medium">Precio de lanzamiento por tiempo limitado. Subirá pronto.</p>
 
           <div className="mt-8 flex flex-col items-center gap-3">
-            <CTAButton />
+            <CTAButton>Sí, quiero mi recetario ahora</CTAButton>
             <p className="text-sm text-white/75">
               Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
             </p>
@@ -431,7 +431,7 @@ function Guarantee() {
           Garantía de 15 días
         </h2>
         <p className="mt-4 text-[var(--brand-text)]/80 leading-relaxed">
-          Tienes 15 días para revisar el material, preparar las recetas y ver cómo te sientes. Si no estás conforme por cualquier motivo, pides el reembolso y te devolvemos todo. Sin preguntas, sin complicaciones.
+          Prueba el recetario completo durante 15 días. Si no sientes que cocinar para tu día a día se volvió más simple y más claro, escríbeme y te devuelvo cada centavo. Sin preguntas, sin complicaciones.
         </p>
       </div>
     </section>
