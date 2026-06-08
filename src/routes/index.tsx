@@ -251,18 +251,12 @@ function WhatsInside() {
         <h2 className="text-center font-display text-3xl md:text-5xl font-bold text-[var(--brand-green-dark)]">
           ¿Qué vas a encontrar adentro?
         </h2>
+        <p className="mt-3 text-center text-[var(--brand-text)]/75 text-base md:text-lg">
+          Guía práctica + recetas + organización semanal
+        </p>
 
-        <div className="mt-10 rounded-3xl overflow-hidden shadow-[var(--shadow-card)] bg-white">
-          <img
-            src={dishesCollage}
-            alt="Todo lo que incluye tu recetario: 60 recetas, plan semanal, lista de compras y más"
-            width={1456}
-            height={1100}
-            loading="lazy"
-            decoding="async"
-            className="w-full h-auto block"
-          />
-        </div>
+        <PreviewSlider />
+
 
         <div className="mt-10 space-y-3">
           {modules.map((m) => {
