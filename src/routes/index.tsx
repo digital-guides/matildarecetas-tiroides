@@ -358,32 +358,6 @@ function Testimonials() {
   );
 }
 
-function SpecialOffer() {
-  return (
-    <section className="bg-[var(--brand-green-dark)] text-white py-16 md:py-24 px-5">
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight">
-          Oferta Especial por <span className="text-[var(--brand-orange-light)]">Tiempo Limitado</span>
-        </h2>
-        <p className="mt-4 text-white/80 text-lg">Llévate hoy las 60 recetas con un descuento insuperable</p>
-
-        <div className="mt-10 bg-[var(--brand-green-deep)] rounded-3xl p-8 md:p-10 border-2 border-[var(--brand-green-accent)] shadow-2xl">
-          <span className="pill bg-[var(--brand-orange)] text-white text-sm font-bold">75% OFF</span>
-          <p className="mt-5 text-white/60 line-through text-lg">Regular {PRICE_REGULAR}</p>
-          <p className="mt-2 text-white/80 text-sm tracking-widest uppercase">Precio de lanzamiento</p>
-          <p className="font-display text-6xl md:text-7xl font-bold mt-1 text-white">{PRICE_OFFER}</p>
-
-          <div className="mt-8 flex flex-col items-center gap-3">
-            <CTAButton />
-            <RatingLine light />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-
 function Guarantee() {
   return (
     <section className="bg-white pb-16 md:pb-24 px-5">
@@ -500,7 +474,6 @@ function Landing() {
       <WhatsInside />
       <MidCTA />
       <Testimonials />
-      <SpecialOffer />
       <Guarantee />
       <FAQ />
       <FinalCTA />
