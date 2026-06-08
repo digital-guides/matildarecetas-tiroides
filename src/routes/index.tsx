@@ -40,7 +40,7 @@ const fontsLink = (
     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
     />
   </>
 );
@@ -53,7 +53,7 @@ function Hero() {
         <span className="pill bg-white/10 border border-white/15 tracking-[0.18em] text-xs" style={{ color: "#E11D8A" }}>
           Las Recetas de Matilda
         </span>
-        <h1 className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1]">
+        <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
           Hipotiroidismo: por fin, una respuesta clara a la pregunta de todos los días — ¿qué cocino hoy?
         </h1>
         <p className="mt-6 text-base md:text-lg text-white/85 max-w-3xl mx-auto leading-relaxed">
@@ -370,7 +370,7 @@ function SpecialOffer() {
         </h2>
         <p className="mt-4 text-white/80 text-lg">Llévate hoy las 60 recetas con un descuento insuperable</p>
 
-        <div className="mt-10 bg-[var(--brand-green-deep)] rounded-3xl p-8 md:p-10 border-2 border-[var(--brand-green-accent)] shadow-2xl">
+        <div className="mt-10 bg-[var(--brand-green-deep)] rounded-3xl p-8 md:p-10 border-2 border-[var(--brand-orange)] shadow-2xl">
           <span className="pill bg-[var(--brand-orange)] text-white text-sm font-bold">Precio de lanzamiento</span>
           <p className="mt-5 text-white/60 line-through text-lg">$37</p>
           <p className="font-display text-6xl md:text-7xl font-bold mt-2 text-white">$17</p>
