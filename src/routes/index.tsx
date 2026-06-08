@@ -371,12 +371,13 @@ function SpecialOffer() {
         <p className="mt-4 text-white/80 text-lg">Llévate hoy las 60 recetas con un descuento insuperable</p>
 
         <div className="mt-10 bg-[var(--brand-green-deep)] rounded-3xl p-8 md:p-10 border-2 border-[var(--brand-green-accent)] shadow-2xl">
-          <span className="pill bg-[var(--brand-orange)] text-white text-sm font-bold">75% OFF</span>
-          <p className="mt-5 text-white/60 line-through text-lg">Precio regular: {PRICE_REGULAR}</p>
-          <p className="font-display text-6xl md:text-7xl font-bold mt-2 text-white">{PRICE_OFFER}</p>
+          <span className="pill bg-[var(--brand-orange)] text-white text-sm font-bold">Precio de lanzamiento</span>
+          <p className="mt-5 text-white/60 line-through text-lg">$37</p>
+          <p className="font-display text-6xl md:text-7xl font-bold mt-2 text-white">$17</p>
+          <p className="mt-3 text-sm text-[var(--brand-orange-light)] font-medium">Precio de lanzamiento por tiempo limitado. Subirá pronto.</p>
 
           <div className="mt-8 flex flex-col items-center gap-3">
-            <CTAButton />
+            <CTAButton>Sí, quiero mi recetario ahora</CTAButton>
             <p className="text-sm text-white/75">
               Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
             </p>
