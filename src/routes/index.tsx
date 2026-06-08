@@ -90,12 +90,11 @@ function Hero() {
 }
 
 const painPoints = [
-  "😩 Te diagnosticaron hipotiroidismo, hipertiroidismo o Hashimoto y nadie te explicó qué puedes comer y qué no. Cada vez que buscas en internet encuentras información diferente y terminas más confundida que antes.",
-  "🫠 Te despiertas hinchada aunque casi no hayas comido. Sientes la cara pesada, el cuerpo inflado — y no sabes qué alimento te lo está causando.",
-  "💇‍♀️ Se te cae mucho cabello y no sabes si es por la tiroides, por los medicamentos o por lo que estás comiendo. Nadie te da una respuesta clara.",
-  "⚖️ El peso no baja aunque comas poco. Tu metabolismo no responde y ninguna dieta te funciona — porque ninguna está pensada para tu condición tiroidea.",
-  "😔 Sientes que comer para la tiroides es aburrido y siempre lo mismo. Terminas comiendo lo de siempre porque no sabes qué más preparar — o haces dos comidas distintas porque tu familia no quiere comer 'comida de enfermo'.",
-  "🥱 La fatiga, la piel seca, el estreñimiento, la irritabilidad — llevas meses o años así y nadie te da un plan concreto de qué comer para sentirte mejor.",
+  "⚖️ Comes menos y aún así sientes que nada cambia.",
+  "🔍 Una página dice 'elimina el gluten', la siguiente dice que no. Una recomienda crucíferas, otra las prohíbe. Terminas más confundida que al principio.",
+  "🔄 Pruebas una dieta, la dejas, empiezas otra. Y sigues sin saber qué deberías cocinar realmente.",
+  "💊 Tomas tu medicación a tiempo, pero a la hora de planear las comidas sigues completamente perdida.",
+  "🍽️ Pasas más tiempo investigando en internet qué puedes comer que cocinando tranquila.",
 ];
 
 function MatildaStory() {
