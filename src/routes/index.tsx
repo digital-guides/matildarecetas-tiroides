@@ -278,10 +278,27 @@ function WhatsInside() {
 }
 
 function MidCTA() {
+  const checks = [
+    "Sabes qué cocinar cada día",
+    "Compras solo lo necesario",
+    "Dejas de buscar información contradictoria",
+    "Comes rico sin complicarte",
+  ];
   return (
     <section id="cta-compra" className="bg-[var(--brand-green-dark)] text-white py-16 md:py-20 px-5 scroll-mt-16">
       <div className="max-w-4xl mx-auto text-center">
-        <div className="rounded-3xl overflow-hidden shadow-xl ring-1 ring-white/10 mb-10">
+        <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight">
+          Lo que cambia cuando dejas de improvisar tus comidas
+        </h2>
+        <ul className="mt-8 max-w-xl mx-auto space-y-3 text-left">
+          {checks.map((c) => (
+            <li key={c} className="flex items-start gap-3 text-base md:text-lg text-white/90">
+              <span className="text-[var(--brand-orange-light)] text-xl leading-none mt-0.5">✅</span>
+              <span>{c}</span>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-10 rounded-3xl overflow-hidden shadow-xl ring-1 ring-white/10 mb-10">
           <img
             src={matildaCocina}
             alt="Matilda en su cocina con recetas saludables para tiroides"
@@ -292,8 +309,11 @@ function MidCTA() {
             className="w-full h-auto block"
           />
         </div>
-        <div className="flex flex-col items-center gap-4">
-          <CTAButton />
+        <div className="flex flex-col items-center gap-2">
+          <CTAButton>SI, QUIERO COMER RICO</CTAButton>
+          <p className="text-white/60 line-through text-base mt-2">Regular {PRICE_REGULAR}</p>
+          <p className="text-white/80 text-xs tracking-widest uppercase">Precio de lanzamiento</p>
+          <p className="font-display text-4xl font-bold text-white leading-none">{PRICE_OFFER}</p>
           <RatingLine light />
           <GuaranteePill light />
         </div>
