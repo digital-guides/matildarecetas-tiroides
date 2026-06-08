@@ -455,11 +455,12 @@ function FinalCTA() {
           60 recetas riquísimas que cuidan tu tiroides. Sin complicarte.
         </p>
         <div className="mt-8 inline-flex flex-col items-center bg-[var(--brand-green-deep)] rounded-3xl px-8 py-6 border border-white/10">
-          <p className="text-white/60 line-through">Antes: {PRICE_REGULAR}</p>
-          <p className="font-display text-5xl md:text-6xl font-bold mt-1">Hoy: {PRICE_OFFER}</p>
+          <p className="text-white/60 line-through text-lg">Regular {PRICE_REGULAR}</p>
+          <p className="mt-2 text-white/80 text-sm tracking-widest uppercase">Precio de lanzamiento</p>
+          <p className="font-display text-5xl md:text-6xl font-bold mt-1">{PRICE_OFFER}</p>
         </div>
         <div className="mt-10 flex flex-col items-center gap-4">
-          <CTAButton />
+          <CTAButton>Si!, Quiero mi Plan</CTAButton>
           <RatingLine light />
           <GuaranteePill light />
         </div>
