@@ -71,13 +71,11 @@ function Hero() {
           />
         </div>
 
-        <div className="mt-10 flex flex-col items-center gap-3">
+        <div className="mt-10 flex flex-col items-center gap-2">
           <CTAButton href="#cta-compra" />
-          <p className="text-sm md:text-base text-white/90">
-            <span className="line-through text-white/60">$37</span>
-            <span className="mx-2">·</span>
-            Hoy: <span className="font-bold text-[var(--brand-orange-light)]">$17</span>
-          </p>
+          <p className="text-white/60 line-through text-base mt-2">Regular {PRICE_REGULAR}</p>
+          <p className="text-white/80 text-xs tracking-widest uppercase">Precio de lanzamiento</p>
+          <p className="font-display text-4xl font-bold text-white leading-none">{PRICE_OFFER}</p>
           <figure className="mt-4 max-w-xl mx-auto bg-white/5 border border-white/10 rounded-2xl p-5 text-left">
             <div className="flex items-center gap-3">
               <img
