@@ -44,46 +44,46 @@
   --color-brand-text: var(--brand-text);
   --color-brand-soft: var(--brand-soft);
 
-  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
-  --radius: 0.875rem;
-  --background: oklch(0.97 0.012 80);
-  --foreground: oklch(0.25 0.02 60);
+  --radius: 0.75rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.25 0.02 240);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.25 0.02 60);
+  --card-foreground: oklch(0.25 0.02 240);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0.02 60);
-  --primary: oklch(0.36 0.05 150);
+  --popover-foreground: oklch(0.25 0.02 240);
+  --primary: oklch(0.32 0.09 152);
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.96 0.018 80);
-  --secondary-foreground: oklch(0.36 0.05 150);
-  --muted: oklch(0.95 0.015 80);
-  --muted-foreground: oklch(0.5 0.02 60);
-  --accent: oklch(0.96 0.018 80);
-  --accent-foreground: oklch(0.36 0.05 150);
-  --destructive: oklch(0.58 0.18 35);
+  --secondary: oklch(0.97 0.02 150);
+  --secondary-foreground: oklch(0.32 0.09 152);
+  --muted: oklch(0.97 0.01 150);
+  --muted-foreground: oklch(0.5 0.02 240);
+  --accent: oklch(0.97 0.02 150);
+  --accent-foreground: oklch(0.32 0.09 152);
+  --destructive: oklch(0.62 0.22 27);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.9 0.015 80);
-  --input: oklch(0.9 0.015 80);
-  --ring: oklch(0.55 0.12 40);
+  --border: oklch(0.92 0.01 150);
+  --input: oklch(0.92 0.01 150);
+  --ring: oklch(0.5 0.1 150);
 
-  /* Brand palette — warm, kitchen-table, trustworthy */
-  --brand-green-dark: #2D4A3A;   /* deep forest/olive green */
-  --brand-green-deep: #243B2E;   /* darker variant for offer card */
-  --brand-green-light: #EAEFE6;  /* soft sage tint */
-  --brand-green-accent: #3F5F4D; /* mid green */
-  --brand-orange: #C8623E;       /* terracotta */
-  --brand-orange-light: #E08566; /* light terracotta */
-  --brand-gold: #D4A04C;         /* mustard */
-  --brand-text: #2B2A26;         /* warm near-black */
-  --brand-soft: #F7F3EC;         /* warm cream */
+  /* Brand palette (oklch equivalents of hex) */
+  --brand-green-dark: oklch(0.32 0.07 152);    /* #063F25 */
+  --brand-green-deep: oklch(0.4 0.09 152);     /* #0B552F */
+  --brand-green-light: oklch(0.96 0.025 150);  /* #EAF7EF */
+  --brand-green-accent: oklch(0.5 0.13 150);   /* #14783D */
+  --brand-orange: oklch(0.72 0.19 50);         /* #FF7A00 */
+  --brand-orange-light: oklch(0.82 0.15 70);   /* #FFB13B */
+  --brand-gold: oklch(0.83 0.14 85);           /* #F6C344 */
+  --brand-text: oklch(0.32 0.03 245);          /* #263442 */
+  --brand-soft: oklch(0.985 0.005 145);        /* #F8FAF7 */
 
-  --gradient-cta: linear-gradient(135deg, #C8623E, #D87A52);
-  --shadow-card: 0 8px 24px -14px color-mix(in oklab, #2D4A3A 35%, transparent);
-  --shadow-cta: 0 12px 28px -10px color-mix(in oklab, #C8623E 55%, transparent);
+  --gradient-orange: linear-gradient(135deg, oklch(0.72 0.19 50), oklch(0.82 0.15 70));
+  --shadow-card: 0 10px 30px -12px color-mix(in oklab, oklch(0.32 0.07 152) 25%, transparent);
+  --shadow-cta: 0 14px 32px -10px color-mix(in oklab, oklch(0.72 0.19 50) 55%, transparent);
 }
 
 @layer base {
@@ -91,15 +91,14 @@
     border-color: var(--color-border);
   }
   body {
-    background-color: var(--brand-soft);
+    background-color: var(--color-background);
     color: var(--brand-text);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
   h1, h2, h3 {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
-    font-weight: 600;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -114,7 +113,7 @@
     font-weight: 700;
     font-size: 1.05rem;
     color: #fff;
-    background: var(--gradient-cta);
+    background: var(--gradient-orange);
     box-shadow: var(--shadow-cta);
     transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
   }
@@ -133,7 +132,7 @@
   }
   .card-soft {
     background: #fff;
-    border-radius: 1rem;
+    border-radius: 1.25rem;
     box-shadow: var(--shadow-card);
   }
 }
