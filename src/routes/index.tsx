@@ -98,7 +98,6 @@ function Hero() {
             </blockquote>
           </figure>
           <RatingLine light />
-          <GuaranteePill light />
         </div>
       </div>
     </section>
