@@ -77,7 +77,7 @@ function Hero() {
             Puedes pagar con Mercado Pago, tarjeta de débito o crédito, o PayPal.
           </p>
           <p className="text-sm md:text-base text-white/90">
-            <span className="line-through text-white/60">$27</span>
+            <span className="line-through text-white/60">$37</span>
             <span className="mx-2">·</span>
             Hoy: <span className="font-bold text-[var(--brand-orange-light)]">$17</span>
           </p>
