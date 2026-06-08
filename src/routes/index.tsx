@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import heroCollage from "@/assets/hero-nueva.webp";
-import dishesCollage from "@/assets/que-vas-encontrar.webp";
+
 import preview1 from "@/assets/preview/p1.webp";
 import preview2 from "@/assets/preview/p2.webp";
 import preview3 from "@/assets/preview/p3.webp";
