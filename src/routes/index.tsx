@@ -431,7 +431,7 @@ function Guarantee() {
           Garantía de 15 días
         </h2>
         <p className="mt-4 text-[var(--brand-text)]/80 leading-relaxed">
-          Tienes 15 días para revisar el material, preparar las recetas y ver cómo te sientes. Si no estás conforme por cualquier motivo, pides el reembolso y te devolvemos todo. Sin preguntas, sin complicaciones.
+          Prueba el recetario completo durante 15 días. Si no sientes que cocinar para tu día a día se volvió más simple y más claro, escríbeme y te devuelvo cada centavo. Sin preguntas, sin complicaciones.
         </p>
       </div>
     </section>
