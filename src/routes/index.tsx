@@ -4,6 +4,7 @@ import dishesCollage from "@/assets/que-vas-encontrar.webp";
 import matildaCocina from "@/assets/matilda-cocina.webp";
 import matildaPerfil from "@/assets/matilda-perfil.png";
 import testimonioElena from "@/assets/testimonio-elena.jpeg";
+import testimonioRegina from "@/assets/testimonio-regina.jpg";
 import testimonioClaudia from "@/assets/testimonio-claudia.jpeg";
 import testimonioPatricia from "@/assets/testimonio-patricia.jpeg";
 import garantiaHotmart from "@/assets/garantia-hotmart.png";
@@ -321,10 +322,10 @@ function MidCTA() {
 
 const testimonials = [
   {
-    name: "María Elena G.",
-    location: "Ciudad de México",
-    photo: testimonioElena,
-    text: "Llevaba meses sin saber qué desayunar. Todo lo que encontraba en internet se contradecía y terminaba comiendo lo mismo de siempre. Con este recetario por fin tengo recetas claras, con ingredientes que consigo aquí, y que no me caen mal. Ya no me despierto tan hinchada por las mañanas.",
+    name: "Regina S.",
+    location: "Guadalajara, México",
+    photo: testimonioRegina,
+    text: "Lo que me gustó mas fue dejar de sentirme tan perdida, cada vez que buscaba información sobre alimentación para la tiroides encontraba algo disitnto entonces cada vez más confundida. Ahora abro el recetario, elijo una receta y listo ya sé qué cocinar sin estar hoooras investigando.",
   },
   {
     name: "Claudia F.",
