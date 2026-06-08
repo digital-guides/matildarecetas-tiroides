@@ -358,6 +358,7 @@ function Testimonials() {
   );
 }
 
+function Guarantee() {
   return (
     <section className="bg-white pb-16 md:pb-24 px-5">
       <div className="max-w-3xl mx-auto bg-[var(--brand-green-light)] border-2 border-[var(--brand-green-accent)]/30 rounded-3xl p-8 md:p-12 text-center">
