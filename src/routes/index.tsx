@@ -540,15 +540,13 @@ function Landing() {
     <div className="min-h-screen bg-white">
       {fontsLink}
       <Hero />
-      <MatildaStory />
       <PainSection />
-      <ProductIntro />
+      <MatildaStory />
       <Outcomes />
       <WhatsInside />
       <MidCTA />
       <Testimonials />
       <SpecialOffer />
-      <WhatsIncluded />
       <Guarantee />
       <FAQ />
       <FinalCTA />
