@@ -308,13 +308,11 @@ function MidCTA() {
             className="w-full h-auto block"
           />
         </div>
-        <div className="flex flex-col items-center gap-2">
-          <CTAButton>SI, QUIERO COMER RICO</CTAButton>
-          <p className="text-white/60 line-through text-base mt-2">Regular {PRICE_REGULAR}</p>
-          <p className="text-white/80 text-xs tracking-widest uppercase">Precio de lanzamiento</p>
-          <p className="font-display text-4xl font-bold text-white leading-none">{PRICE_OFFER}</p>
-          <RatingLine light />
-          <GuaranteePill light />
+        <div className="flex flex-col items-center gap-3">
+          <CTAButton href="#cta-final">SI, QUIERO COMER RICO</CTAButton>
+          <p className="text-white/90 text-sm md:text-base tracking-wide uppercase font-semibold">
+            Es momento de empezar a sentirme mejor
+          </p>
         </div>
       </div>
     </section>
