@@ -449,7 +449,7 @@ function FinalCTA() {
           <p className="font-display text-5xl md:text-6xl font-bold mt-1">{PRICE_OFFER}</p>
         </div>
         <div className="mt-10 flex flex-col items-center gap-4">
-          <CTAButton>Si!, Quiero mi Plan</CTAButton>
+          <CTAButton>SI, ESTOY DECIDIDA</CTAButton>
           <RatingLine light />
           <GuaranteePill light />
         </div>
