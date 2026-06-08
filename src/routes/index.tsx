@@ -308,13 +308,11 @@ function MidCTA() {
             className="w-full h-auto block"
           />
         </div>
-        <div className="flex flex-col items-center gap-2">
-          <CTAButton>SI, QUIERO COMER RICO</CTAButton>
-          <p className="text-white/60 line-through text-base mt-2">Regular {PRICE_REGULAR}</p>
-          <p className="text-white/80 text-xs tracking-widest uppercase">Precio de lanzamiento</p>
-          <p className="font-display text-4xl font-bold text-white leading-none">{PRICE_OFFER}</p>
-          <RatingLine light />
-          <GuaranteePill light />
+        <div className="flex flex-col items-center gap-3">
+          <CTAButton href="#cta-final">SI, QUIERO COMER RICO</CTAButton>
+          <p className="text-white/90 text-sm md:text-base tracking-wide uppercase font-semibold">
+            Es momento de empezar a sentirme mejor
+          </p>
         </div>
       </div>
     </section>
@@ -437,7 +435,7 @@ function FAQ() {
 
 function FinalCTA() {
   return (
-    <section className="bg-[var(--brand-green-dark)] text-white py-16 md:py-24 px-5">
+    <section id="cta-final" className="bg-[var(--brand-green-dark)] text-white py-16 md:py-24 px-5 scroll-mt-16">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight">
           Empieza a cocinar para tu salud <span className="text-[var(--brand-orange-light)]">hoy</span>
@@ -451,7 +449,7 @@ function FinalCTA() {
           <p className="font-display text-5xl md:text-6xl font-bold mt-1">{PRICE_OFFER}</p>
         </div>
         <div className="mt-10 flex flex-col items-center gap-4">
-          <CTAButton>Si!, Quiero mi Plan</CTAButton>
+          <CTAButton>SI, ESTOY DECIDIDA</CTAButton>
           <RatingLine light />
           <GuaranteePill light />
         </div>
