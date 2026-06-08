@@ -474,7 +474,6 @@ function Landing() {
       <WhatsInside />
       <MidCTA />
       <Testimonials />
-      <SpecialOffer />
       <Guarantee />
       <FAQ />
       <FinalCTA />
