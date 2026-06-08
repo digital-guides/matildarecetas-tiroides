@@ -3,7 +3,7 @@ import heroCollage from "@/assets/hero-nueva.webp";
 import dishesCollage from "@/assets/que-vas-encontrar.webp";
 import matildaCocina from "@/assets/matilda-cocina.webp";
 import matildaPerfil from "@/assets/matilda-perfil.png";
-import testimonioElena from "@/assets/testimonio-elena.jpeg";
+import testimonioRegina from "@/assets/testimonio-regina.jpg";
 import testimonioClaudia from "@/assets/testimonio-claudia.jpeg";
 import testimonioPatricia from "@/assets/testimonio-patricia.jpeg";
 import garantiaHotmart from "@/assets/garantia-hotmart.png";
