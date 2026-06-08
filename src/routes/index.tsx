@@ -385,33 +385,6 @@ function SpecialOffer() {
   );
 }
 
-const includes = [
-  { icon: "📱", title: "Acceso desde el celular y la computadora" },
-  { icon: "✉️", title: "Entrega inmediata por mail" },
-  { icon: "♾️", title: "Acceso de por vida + actualizaciones" },
-];
-
-function WhatsIncluded() {
-  return (
-    <section className="bg-white py-16 md:py-24 px-5">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-center font-display text-3xl md:text-5xl font-bold text-[var(--brand-green-dark)]">
-          ¿Qué incluye?
-        </h2>
-        <div className="mt-12 grid md:grid-cols-3 gap-6">
-          {includes.map((it) => (
-            <div key={it.title} className="bg-[var(--brand-green-light)] rounded-2xl p-7 text-center shadow-sm">
-              <div className="w-16 h-16 mx-auto rounded-2xl bg-white flex items-center justify-center text-3xl shadow-sm">
-                {it.icon}
-              </div>
-              <p className="mt-5 font-semibold text-[var(--brand-green-dark)] text-lg leading-snug">{it.title}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Guarantee() {
   return (
