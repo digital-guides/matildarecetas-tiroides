@@ -244,6 +244,71 @@ const modules = [
   "💡 Tips de Cocina Rápida y Reemplazos Inteligentes",
 ];
 
+const previewSlides = [
+  { src: preview1, alt: "Receta de ensalada completa con pollo y quinoa" },
+  { src: preview2, alt: "Plan semanal de 7 días" },
+  { src: preview3, alt: "Receta de cremoso de palta y chocolate" },
+  { src: preview4, alt: "Nutrientes clave y alimentos bociógenos" },
+];
+
+function PreviewSlider() {
+  const [idx, setIdx] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setIdx((i) => (i + 1) % previewSlides.length), 4000);
+    return () => clearInterval(t);
+  }, []);
+  const go = (n: number) => setIdx((n + previewSlides.length) % previewSlides.length);
+  return (
+    <div className="mt-10 relative">
+      <div className="overflow-hidden rounded-3xl">
+        <div
+          className="flex transition-transform duration-500 ease-out"
+          style={{ transform: `translateX(-${idx * 100}%)` }}
+        >
+          {previewSlides.map((s) => (
+            <div key={s.src} className="w-full shrink-0 flex justify-center bg-white">
+              <img
+                src={s.src}
+                alt={s.alt}
+                loading="lazy"
+                decoding="async"
+                className="max-h-[600px] w-auto h-auto object-contain"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <button
+        type="button"
+        onClick={() => go(idx - 1)}
+        aria-label="Anterior"
+        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 hover:bg-white shadow-md flex items-center justify-center text-[var(--brand-green-dark)] font-bold text-xl"
+      >
+        ‹
+      </button>
+      <button
+        type="button"
+        onClick={() => go(idx + 1)}
+        aria-label="Siguiente"
+        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 hover:bg-white shadow-md flex items-center justify-center text-[var(--brand-green-dark)] font-bold text-xl"
+      >
+        ›
+      </button>
+      <div className="mt-4 flex justify-center gap-2">
+        {previewSlides.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            onClick={() => go(i)}
+            aria-label={`Ir a slide ${i + 1}`}
+            className={`h-2.5 rounded-full transition-all ${i === idx ? "w-8 bg-[var(--brand-green-dark)]" : "w-2.5 bg-[var(--brand-green-dark)]/30"}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function WhatsInside() {
   return (
     <section className="bg-[var(--brand-green-light)] py-16 md:py-24 px-5">
