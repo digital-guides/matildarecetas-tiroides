@@ -296,7 +296,7 @@ function MidCTA() {
           />
         </div>
         <div className="flex flex-col items-center gap-4">
-          <CTAButton />
+          <CTAButton>Quiero dejar de adivinar qué cocinar</CTAButton>
           <RatingLine light />
           <GuaranteePill light />
         </div>
